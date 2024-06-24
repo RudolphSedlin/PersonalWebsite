@@ -15,6 +15,12 @@ const Qualifications = [
         ]
     ],
 
+    ['Professional Experience',
+        [
+            ['Teaching Assistant (January 2022 - May 2024)', 'I have worked as a Teaching Assistant at Stevens Institute of Technology from January 2022 to May 2024. In that time, I have provided assistanceships for courses involving introductory Python, Data Structures, Computer Organization, and Systems Programming. My responsibilities have included development of automated homework grading tools, hosting office hours, hosting laboratory work and recitations, grading, and exam proctoring. In doing so, I developed a methodology for effective communication of a variety of computer science topics of varying difficulties and to varying listeners.'],
+        ]
+    ],
+
     ['Databases',
         [
             ['MongoDB', 'Used as a NoSQL database for Ducks in a Row, where a structured relational database would not be optimal.'],

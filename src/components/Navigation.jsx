@@ -8,7 +8,7 @@ function Navigation(props) {
     let pagesList;
 
     currentPage = props.currentPage;
-    pagesList = ['Home', 'About', 'Qualifications', 'Projects', 'Blog'];
+    pagesList = ['About', 'Qualifications', 'Projects', 'Blog'];
 
     return (
         <div id='Navigation'>

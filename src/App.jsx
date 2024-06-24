@@ -3,7 +3,6 @@ import './App.css'
 
 import {Route, Routes, Navigate} from 'react-router-dom'
 
-import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Qualifications from './components/Qualifications.jsx'
 import Projects from './components/Projects.jsx'
@@ -13,8 +12,7 @@ function App() {
   return (
       <div className='App'>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About />} />
+          <Route path='/' element={<About />} />
           <Route path='/Qualifications' element={<Qualifications />} />
           <Route path='/Projects' element={<Projects />} />
           <Route path='/Blog' element={<Blog />} />
