@@ -3,9 +3,9 @@ import Navigation from './Navigation.jsx'
 
 import '../App.css'
 
-import PROJECTS from '../assets/Projects.js'
+import BLOGS from '../assets/Blogs.js'
 
-function Projects() {
+function Blog() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -22,34 +22,36 @@ function Projects() {
             return (
                 <div>
                     <Navigation
-                        currentPage='Projects'
+                        currentPage='Blog'
                     />
                     <h1>
-                        Projects
+                        Blog
                     </h1>
-                    Listed here are the various software projects I have worked on, sorted chronologically.
-                    {PROJECTS.map((project) =>
+                    I intend to post blogs and updates to this page, sorted reverse-chronologically from the top-down.
+                    {BLOGS.map((blog) =>
                         <div class='left'>
                             <br />
                             <hr />
-                            <h2 class='left'>{project.title}</h2>
+                            <h2 class='left'>
+                                {blog.title}
+                            </h2>
                             <br />
-                            <h3 class='left'>Description:</h3>
-                            {project.description}
-                            <br />
-                            <br />
-                            <h3 class='left'>Role:</h3>
-                            {project.role}
-                            <br />
-                            <br />
-                            <h3 class='left'>Duration:</h3>
-                            {project.time}
+                            <b class='larger'>
+                                Date:
+                                <tab />
+                            </b>
+                            {blog.date}
                             <br />
                             <br />
-                            {project.links && project.links[0] ?
+                            {blog.post}
+                            <br />
+                            <br />
+                            {blog.links && blog.links[0] ?
                                 <div class='left'>
-                                    <h3 class='left'>External Links:</h3>
-                                    {project.links.map((link) =>
+                                    <h3 class='left'>
+                                        External Links:
+                                    </h3>
+                                    {blog.links.map((link) =>
                                         <a class='left' href={link[1]} target="_blank">
                                             <button>
                                                 {link[0]}
@@ -61,20 +63,21 @@ function Projects() {
                                 </div> :
                                 <></>
                             }
-                            {project.images && project.images[0] ?
+                            {blog.images && blog.images[0] ?
                                 <div class='left'>
-                                    <h3 class='left'>Images:</h3>
-                                    {project.images.map((image) =>
+                                    <h3 class='left'>
+                                        Images:
+                                    </h3>
+                                    {blog.images.map((image) =>
                                         <img src={image} class='images'/>
                                     )}
                                 </div> :
                                 <></>
                             }
-
                         </div>
                     )}
                 </div>
             )
 };
 
-export default Projects;
+export default Blog;
