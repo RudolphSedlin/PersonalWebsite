@@ -1,5 +1,5 @@
 const Qualifications = [
-    ['Programming Languages',
+    ['Programming / Scripting Languages',
         [
             ['AArch64', 'I have used AArch64 assembly extensively for Computer Organization coursework, and have also hosted laboratory work on the subject as a Course Assistant on the subject.'],
             ['C', 'I have used C extensively for Systems Programming and Linux kernel programming tasks, and have taught it as a Course Assistant at Stevens Institute of Technology for years, indiciative of my own understanding of the subject as well.'],
@@ -40,14 +40,14 @@ const Qualifications = [
     ['Infrastructure',
         [
             ['Apache', 'Apache is my HTTP server of choice and serves this website.'],
-            ['AWS', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
+            ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
         ]
     ],
 
     ['Operating Systems',
         [
             ['BSD', 'I have used both FreeBSD and NetBSD for previous hosting projects, typically on AWS EC2 instances. My experience on Linux systems largely carries over here, though of course there are significant distinctions as well.'],
-            ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus.'],
+            ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus. In total, I used the following popular distributions: Arch, Debian, Fedora, Ubuntu.'],
             ['Windows', 'I have used Windows systems for desktop and productivity use prior to switching to Linux systems, going back to Windows 98.'],
         ]
     ],
@@ -63,7 +63,11 @@ const Qualifications = [
 
     ['Other Skills',
         [
+            ['Communication', 'I have developed an ability to communicate robust and complex technical topics succinctly to varied listeners.'],
             ['Computing Hardware', 'I have been working with computing hardware for just under a decade now, and have built and extensively modified many hardware systems. I have grown adept at troubleshooting hardware problems ranging from issues in configuration to electrical and thermal problems as well.'],
+            ['Filesystems', 'I have previously worked with EXT4, exFAT, FAT32, FUSE, NTFS, and ZFS systems.'],
+            ['Networking Protocols and Technologies', 'I am familiar with and have worked with IP, TCP, UDP, DHCP, ARP, HTTP, SMTP, SSH, SCP, and TLS.'],
+            ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, and have developed a deep understanding on many subjects. This gives an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions.'],
             ['Spoken Languages', 'I of course speak English natively, but am also adept in Russian, with more limited proficiency in German and Japanese.'],
             ['Systems Administration', 'Through coursework and my own investigation; I have developed a strong aptitude for benchmarking, scripting, networking (especially so), and troubleshooting of assorted UNIX and BSD systems.'],
         ]

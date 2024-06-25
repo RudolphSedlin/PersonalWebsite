@@ -1,8 +1,6 @@
 text-align: center;
 
 #Navigation {
-  position: fixed !important;
-/* margin-top: 0px !important; */
 }
 
 button:disabled {
@@ -13,9 +11,33 @@ button:disabled {
   color: #666666;
 }
 
-.images {
-  height: 500px;
+button {
+  margin: 0px;
+}
+
+.button_link {
+  margin: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+img {
+  max-height: 1000px;
   padding: 10px;
+  max-width: 100%;
+}
+
+br {
+  margin: 0px;
+}
+
+.images {
+  max-height: 500px;
+  padding: 10px;
+  max-width: 100%;
 }
 
 .left {
@@ -25,8 +47,16 @@ button:disabled {
   margin: 0 auto;
 }
 
+.list {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 5px;
+}
+
 .larger {
   font-size: 1.2em;
+  margin: 0px;
 }
 
 tab {
@@ -38,7 +68,7 @@ tab {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 5px;
   /*border: 3px solid green;
   padding: 10px;*/
 }

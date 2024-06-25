@@ -51,7 +51,7 @@ function Projects() {
                                     <h3 class='left'>External Links:</h3>
                                     {project.links.map((link) =>
                                         <a class='left' href={link[1]} target="_blank">
-                                            <button>
+                                            <button class='button_link'>
                                                 {link[0]}
                                             </button>
                                         </a>

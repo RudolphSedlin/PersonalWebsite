@@ -8,10 +8,10 @@ function Navigation(props) {
     let pagesList;
 
     currentPage = props.currentPage;
-    pagesList = ['About', 'Qualifications', 'Projects', 'Blog'];
+    pagesList = ['About', 'Projects', 'Blog', 'Contact'];
 
     return (
-        <div id='Navigation'>
+        <div id='Navigation' class='Navigation'>
             {
                 pagesList.map((page) =>
                     page === currentPage ?

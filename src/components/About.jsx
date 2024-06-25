@@ -3,6 +3,8 @@ import Navigation from './Navigation.jsx'
 
 import '../App.css'
 
+import QUALIFICATIONS from '../assets/Qualifications.js'
+
 function About() {
     const [loading, setLoading] = useState(true);
 
@@ -31,43 +33,28 @@ function About() {
                     This website is currently a fairly spartan React thick-client at the moment, with plans to migrate to a more advanced web-stack in the not too distant future. It is hosted on a Fedora AWS EC2 instance in US-East-1, and I am wondering if it is secure. Feel free to check out the other tabs to learn more, it was a pleasure acquainting. If you have questions or requests regarding my work, please email me.
                     <br />
                     <br />
-                    <hr />
-                    <div>
+                    Listed below are my qualifications, sorted by various categories.
+                    {QUALIFICATIONS.map((category) =>
+                        <div class='left'>
+                        <br />
+                        <hr />
                         <h2>
-                            Contact
+                        {category[0]}
                         </h2>
-                        <b class='larger'>
-                            Email:
+                        <div class='left'>
+                        {category[1].map((qualification) =>
+                            <div class='left'>
+                            <br />
+                            <b class='larger'>
+                            {qualification[0] + ':'}
                             <tab />
-                        </b>
-                        Rudolph.Sedlin@protonmail.com
-                        <tab />
-                        <b class='larger'>
-                            Phone:
-                            <tab />
-                        </b>
-                        646-565-7486
-                        <tab />
-                        <a class='left' href='https://linkedin.com/in/rudolph-sedlin' target="_blank">
-                            <button>
-                                LinkedIn
-                            </button>
-                        </a>
-                        <tab />
-                        <a class='left' href='https://github.com/RudolphSedlin' target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                    </div>
-                    <br />
-                    <hr />
-                    <div>
-                        <h2>
-                            Resume
-                        </h2>
-                        <img src='/images/Resume.png' width='1000px'/>
-                    </div>
+                            </b>
+                            {qualification[1]}
+                            </div>
+                        )}
+                        </div>
+                        </div>
+                    )}
                 </div>
             )
 };
