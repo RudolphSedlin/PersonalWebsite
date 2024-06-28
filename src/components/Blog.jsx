@@ -47,6 +47,7 @@ function Blog() {
                             <div class='left' dangerouslySetInnerHTML={{__html: blog.post}} />
                             {blog.links && blog.links[0] ?
                                 <div class='left'>
+                                    <br />
                                     <h3 class='left'>
                                         External Links:
                                     </h3>
@@ -57,13 +58,12 @@ function Blog() {
                                             </button>
                                         </a>
                                     )}
-                                    <br />
-                                    <br />
                                 </div> :
                                 <></>
                             }
                             {blog.images && blog.images[0] ?
                                 <div class='left'>
+                                    <br />
                                     <h3 class='left'>
                                         Images:
                                     </h3>

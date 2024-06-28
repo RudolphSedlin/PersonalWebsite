@@ -10,7 +10,12 @@ import Contact from './components/Contact.jsx'
 
 function App() {
   return (
-      <div className='App'>
+    <div className='App' style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100%",
+    }}>
         <Routes>
           <Route path='/' element={<About />} />
           <Route path='/Contact' element={<Contact />} />

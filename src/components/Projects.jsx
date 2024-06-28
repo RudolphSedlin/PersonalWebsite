@@ -44,10 +44,9 @@ function Projects() {
                             <br />
                             <h3 class='left'>Duration:</h3>
                             {project.time}
-                            <br />
-                            <br />
                             {project.links && project.links[0] ?
                                 <div class='left'>
+                                    <br />
                                     <h3 class='left'>External Links:</h3>
                                     {project.links.map((link) =>
                                         <a class='left' href={link[1]} target="_blank">
@@ -56,13 +55,12 @@ function Projects() {
                                             </button>
                                         </a>
                                     )}
-                                    <br />
-                                    <br />
                                 </div> :
                                 <></>
                             }
                             {project.images && project.images[0] ?
                                 <div class='left'>
+                                    <br />
                                     <h3 class='left'>Images:</h3>
                                     {project.images.map((image) =>
                                         <img src={image} class='images'/>
