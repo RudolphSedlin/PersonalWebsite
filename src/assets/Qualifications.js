@@ -11,13 +11,38 @@ const Qualifications = [
             ['MATLAB', 'I used MATLAB to program and graph assorted numerical methods, especially as they relate to interpolation and projection.'],
             ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
             ['R', 'I used R for assorted statistical analysis and graphing in undergraduate entry-level and intermediate statistics.'],
-            ['SH', 'I used the Bourne Again SH (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
+            ['Shell', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
         ]
     ],
 
     ['Professional Experience',
         [
             ['Teaching Assistant (January 2022 - May 2024)', 'I have worked as a Teaching Assistant at Stevens Institute of Technology from January 2022 to May 2024. In that time, I have provided assistanceships for courses involving introductory Python, Data Structures, Computer Organization, and Systems Programming. My responsibilities have included development of automated homework grading tools, hosting office hours, hosting laboratory work and recitations, grading, and exam proctoring. In doing so, I developed a methodology for effective communication of a variety of computer science topics of varying difficulties and to varying listeners.'],
+        ]
+    ],
+
+    ['Operating Systems',
+        [
+            ['BSD', 'I have used both FreeBSD and NetBSD for previous hosting projects, typically on AWS EC2 instances. My experience on Linux systems largely carries over here, though of course there are significant distinctions as well.'],
+            ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus. In total, I used the following popular distributions: Arch, Debian, Fedora, Ubuntu.'],
+            ['Windows', 'I have used Windows systems for desktop and productivity use prior to switching to Linux systems, going back to Windows 98.'],
+        ]
+    ],
+
+    ['Hardware',
+        [
+            ['CPUs', 'I have studied and extensively benchmarked and troubleshooted assorted Intel Core Processors such as the Core i9 13900K and AMD Ryzen 9 5950X in both Windows and Linux environments. I have extensively probed the voltage-frequency characteristics of many of these parts, as well as their electrical and thermal properties, in addition to just their performance.'],
+            ['GPUs', 'Similarly to CPUs, I have done similar extensive investigation of assorted consumer GPUs such as the Intel Arc A770 LE and AMD Radeon RX 5700XT.'],
+            ['Desktop Electronics', 'I have been working with assorted computing hardware since I was 13, and have built and extensively modified many hardware systems. I have grown adept at troubleshooting hardware problems ranging from issues in configuration to electrical and thermal problems as well.'],
+        ]
+    ],
+
+    ['Software',
+        [
+            ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration.'],
+            ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
+            ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
+            ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
         ]
     ],
 
@@ -44,32 +69,15 @@ const Qualifications = [
         ]
     ],
 
-    ['Operating Systems',
-        [
-            ['BSD', 'I have used both FreeBSD and NetBSD for previous hosting projects, typically on AWS EC2 instances. My experience on Linux systems largely carries over here, though of course there are significant distinctions as well.'],
-            ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus. In total, I used the following popular distributions: Arch, Debian, Fedora, Ubuntu.'],
-            ['Windows', 'I have used Windows systems for desktop and productivity use prior to switching to Linux systems, going back to Windows 98.'],
-        ]
-    ],
-
-    ['Software',
-        [
-            ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration.'],
-            ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
-            ['G-Suite', 'I use GSuite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
-            ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
-        ]
-    ],
-
     ['Other Skills',
         [
             ['Communication', 'I have developed an ability to communicate robust and complex technical topics succinctly to varied listeners.'],
-            ['Computing Hardware', 'I have been working with computing hardware for just under a decade now, and have built and extensively modified many hardware systems. I have grown adept at troubleshooting hardware problems ranging from issues in configuration to electrical and thermal problems as well.'],
             ['Filesystems', 'I have previously worked with EXT4, exFAT, FAT32, FUSE, NTFS, and ZFS systems.'],
             ['Networking Protocols and Technologies', 'I am familiar with and have worked with IP, TCP, UDP, DHCP, ARP, HTTP, SMTP, SSH, SCP, and TLS.'],
             ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, and have developed a deep understanding on many subjects. This gives an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions.'],
             ['Spoken Languages', 'I of course speak English natively, but am also adept in Russian, with more limited proficiency in German and Japanese.'],
             ['Systems Administration', 'Through coursework and my own investigation; I have developed a strong aptitude for benchmarking, scripting, networking (especially so), and troubleshooting of assorted UNIX and BSD systems.'],
+            ['Writing', 'Going along with my communciation skillset, I am also adept at writing succinct summaries of elaborate concepts, and always fared well in my writing coursework.'],
         ]
     ],
 ]

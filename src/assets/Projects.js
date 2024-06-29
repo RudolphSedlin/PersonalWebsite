@@ -25,12 +25,12 @@ const PROJECTS = [
     {
         title: 'Zenpower3',
         description:  'Zenpower3 is a Linux kernel driver for reading temperature, voltage(SVI2), current(SVI2) and power(SVI2) for AMD Zen family CPUs, now with Zen 3 support!',
-        role: 'Contributed hardware specifications, test data, and diagnostics to the development of Zenpower3 for reporting hardware sensor data on AMD Cezanne and Vermeer processors in Linux',
+        role: 'Contributed hardware specifications, test data, benchmarking, and diagnostics to the development of Zenpower3 for reporting hardware sensor data on AMD Cezanne and Vermeer processors in Linux',
         time: '08/2021 - 10/2021',
         links: [
             ['Git', 'https://git.exozy.me/a/zenpower3'],
         ],
-        images: [],
+        images: ['/images/Zenpower.png'],
     },
 ]
 

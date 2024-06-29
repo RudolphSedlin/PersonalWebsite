@@ -30,7 +30,10 @@ function About() {
                     I am a Senior Computer Science undergraduate student at Stevens Institute of Technology. I am interested in pursuing a career in SRE, SWE, and Data Science. Additionally, I am also passionate about computing hardware, infrastructure, semiconductor manufacturing, and astronomy. I am a diligent, patient, and collaborative problem solver and adaptable to most situations.
                     <br />
                     <br />
-                    This website is currently a fairly spartan React thick-client being served by Apache at the moment, with plans to migrate to a more advanced web-stack in the not too distant future (that said, this simple tech-stack does make things fast, in performance and development). It is hosted on a Fedora AWS EC2 instance in US-East-1, and I am wondering if it is secure. My SSL certificate was acquired from Let's Encrypt. Feel free to check out the other tabs to learn more, it was a pleasure acquainting. If you have questions or requests regarding my work, please email me.
+                    This website is currently a fairly spartan React thick-client being served by Apache at the moment, with plans to migrate to a more advanced web-stack in the not too distant future (that said, this simple tech-stack does make things fast, in runtime performance and development). It is hosted on a Fedora AWS EC2 instance in US-East-1. My SSL certificate was acquired from Let's Encrypt.
+                    <br />
+                    <br />
+                    To learn more, please check the other tabs on this webpage. If you have questions or requests regarding my work, please email me.
                     <br />
                     <br />
                     Listed below are my qualifications, sorted by various categories.
