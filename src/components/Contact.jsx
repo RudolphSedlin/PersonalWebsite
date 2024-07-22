@@ -60,6 +60,14 @@ function Contact() {
                                         Github
                                     </button>
                                 </a>
+                                <tab />
+                            </span>
+                            <span class='flex-item'>
+                                <a class='left' href='https://www.hackerrank.com/profile/Rudolph_Sedlin' target="_blank">
+                                <button>
+                                    HackerRank
+                                </button>
+                                </a>
                             </span>
                         </div>
                     </div>

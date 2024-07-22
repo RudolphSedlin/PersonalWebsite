@@ -1,5 +1,15 @@
 const BLOGS = [
     {
+        title: 'Pursuing HackerRanks and Certifications.',
+        post: "Going into multi-week slumbers and arising from the soil for new activity spontaneously and unpredictably is my passion. That being said, I have been busy on my side projects and working through assorted HackerRank certifications and challenges, so as to grow my capabilities beyond just my preferred tools and projects before the start of my next and final semester. I would recommend them to anyone else browsing, they provide a great platform for evaluating not just standard algorithms questions (though they are also important of course), but also more language or technology-specific assessments and challenges, which appeals to me somewhat more. I am fairly adept at solving algorithms problems anyways, so rote-memorization of solutions is of questionable utility to me.",
+        date: 'July 21st, 2024',
+        links: [
+            ['HackerRank', 'https://www.hackerrank.com/']
+        ],
+        images: ['/images/HackerRank.svg'],
+    },
+
+    {
         title: 'Future Plans.',
         post: "On the subject of blogging about stuff not strictly related to this portfolio, I have ruminated on future plans and have decided that I can architect seperate webpages for my other hobbies. More specifically, I am considering developing a page in regards to my thoughts on assorted electronics components, especially ones that I have worked with personally. In particular, I wish to discuss with others elements that often get overlooked in typical review or discussion pieces, such as the voltage-frequency characteristics of various parts for more advanced users, their electrical and thermal properties as it relates to assorted usecases, as well as the characteristics of their memory controllers and subsystems. I also wish to consider the design decisions made for these components, such as their microarchitectures, lithography and packaging, configuration, product segmentation, and the contexts for their development.",
         date: 'June 29th, 2024',

@@ -1,4 +1,4 @@
-const Qualifications = [
+const QUALIFICATIONS = [
     ['Programming / Scripting Languages',
         [
             ['AArch64', 'I have used AArch64 assembly extensively for Computer Organization coursework, and have also hosted laboratory work on the subject as a Course Assistant on the subject.'],
@@ -9,6 +9,7 @@ const Qualifications = [
             ['Java', 'My first programming language. Used extensively for Anti-Copy-Paster-Python, where the source-code is entirely in Java.'],
             ['Javascript', 'I used Javascript extensively for various web development projects like Ducks in a Row, as well as this website of course.'],
             ['MATLAB', 'I used MATLAB to program and graph assorted numerical methods, especially as they relate to interpolation and projection.'],
+            ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for OOP language in academic coursework.'],
             ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
             ['R', 'I used R for assorted statistical analysis and graphing in undergraduate entry-level and intermediate statistics.'],
             ['Shell', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
@@ -21,11 +22,45 @@ const Qualifications = [
         ]
     ],
 
+    ['Web-Stack',
+        [
+            ['Express.js', 'Used Express extensively for routing and middleware in Ducks in a Row.'],
+            ['GraphQL', 'Used GraphQL to enforce API request schema.'],
+            ['Handlebars.js', 'Used extensively as a static site generator for Ducks in a Row, as its templating features were sufficient for it.'],
+            ['Node.js', 'As is typical for a web-stack, I use Node as a server-side runtime environment for my web development, and NPM for my packaging needs.'],
+            ['React.js', 'Used for this website and small miscellanious projects to produce thick-client static sites to avoid repeated network access.'],
+            ['Redis', 'Used Redis to accelerate repeated API access with cached results on the server-side.'],
+        ]
+    ],
+
+    ['Databases',
+        [
+            ['MongoDB', 'Used as a NoSQL database for Ducks in a Row, where a structured relational database would not be optimal.'],
+            ['PostgreSQL', 'Used extensively in my DBMS work to establish relational databases. I am familiar with writing complex OLAP queries. Hosted my own databases on mutliple machines and connected to them remotely via language APIs such as JDBC and PSYCOPG. Wrote a Python script to enable easier aggregation on grouping attributes, a common pitfall of standard SQL query syntax, where multiple joins are required.'],
+        ]
+    ],
+
+    ['Infrastructure',
+        [
+            ['Apache', 'Apache is my HTTP server of choice and serves this website.'],
+            ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
+        ]
+    ],
+
     ['Operating Systems',
         [
             ['BSD', 'I have used both FreeBSD and NetBSD for previous hosting projects, typically on AWS EC2 instances. My experience on Linux systems largely carries over here, though of course there are significant distinctions as well.'],
             ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus. In total, I used the following popular distributions: Arch, Debian, Fedora, Ubuntu.'],
             ['Windows', 'I have used Windows systems for desktop and productivity use prior to switching to Linux systems, going back to Windows 98.'],
+        ]
+    ],
+
+    ['Software',
+        [
+            ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration. I am familiar with the PR and merging process, as well as how to raise and resolve issues on services such as Github, Gitlab, and Gitea.'],
+            ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
+            ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
+            ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
         ]
     ],
 
@@ -37,44 +72,14 @@ const Qualifications = [
         ]
     ],
 
-    ['Software',
-        [
-            ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration.'],
-            ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
-            ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
-            ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
-        ]
-    ],
-
-    ['Databases',
-        [
-            ['MongoDB', 'Used as a NoSQL database for Ducks in a Row, where a structured relational database would not be optimal.'],
-            ['PostgreSQL', 'Used extensively in my DBMS work to establish relational databases. I am familiar with writing complex OLAP queries. Hosted my own databases on mutliple machines and connected to them remotely. Wrote a Python script to enable easier aggregation on grouping attributes, a common pitfall of standard SQL query syntax, where multiple joins are required.'],
-        ]
-    ],
-
-    ['Frameworks',
-        [
-            ['Express.js', 'Used Express extensively for routing and middleware in Ducks in a Row.'],
-            ['Handlebars.js', 'Used extensively as a static site generator for Ducks in a Row, as its templating features were sufficient for it.'],
-            ['Node.js', 'As is typical for a web-stack, I use Node as a server-side runtime environment for my web development, and NPM for my packaging needs.'],
-            ['React.js', 'Used for this website and small miscellanious projects to produce thick-client static sites to avoid repeated network access.'],
-        ]
-    ],
-
-    ['Infrastructure',
-        [
-            ['Apache', 'Apache is my HTTP server of choice and serves this website.'],
-            ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
-        ]
-    ],
-
     ['Other Skills',
         [
+            ['Ambiguous Troubleshooting', 'Through the use of rare or exotic hardware configurations on bleeding-edge or unorthodox software configurations. I have developed an aptitude for troubleshooting hardware and software problems with a complete lack of external information that I can consult, and often a lack of information on the issue being echoed by the system itself.'],
             ['Communication', 'I have developed an ability to communicate robust and complex technical topics succinctly to varied listeners.'],
             ['Filesystems', 'I have previously worked with EXT4, exFAT, FAT32, FUSE, NTFS, and ZFS systems.'],
-            ['Networking Protocols and Technologies', 'I am familiar with and have worked with IP, TCP, UDP, DHCP, ARP, HTTP, SMTP, SSH, SCP, and TLS.'],
-            ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, and have developed a deep understanding on many subjects. This gives an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions.'],
+            ['Leadership', 'To develop my leadership and collaboration skills, I officiated and directed the Stevens Linux Users Group. I also took a leading role in projects like Ducks in a Row and Anti-Copy-Paster-Python.'],
+            ['Networking Protocols and Technologies', 'I am familiar with and have worked with IP, TCP, UDP, DHCP, ARP, HTTP, FTP, SMTP, SSH, SCP, and TLS. I am also familiar with the DNS and Certificate Authorities.'],
+            ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, have developed a deep understanding on many subjects, and consider it an interdisciplinary strength og mine. This experience provides me with an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions.'],
             ['Spoken Languages', 'I of course speak English natively, but am also adept in Russian, with more limited proficiency in German and Japanese.'],
             ['Systems Administration', 'Through coursework and my own investigation; I have developed a strong aptitude for benchmarking, scripting, networking (especially so), and troubleshooting of assorted UNIX and BSD systems.'],
             ['Writing', 'Going along with my communciation skillset, I am also adept at writing succinct summaries of elaborate concepts, and always fared well in my writing coursework.'],
@@ -82,4 +87,4 @@ const Qualifications = [
     ],
 ]
 
-export default Qualifications;
+export default QUALIFICATIONS;
