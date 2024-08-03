@@ -28,6 +28,7 @@ function Contact() {
                     If you are interested and would like to contact me, I have can always be reached in the following ways, and am always willing to entertain a discussion on almost any topic.
                     <br />
                     <br />
+                    <hr />
                     <div>
                         <div class='flex-container'>
                             <span class='flex-item'>

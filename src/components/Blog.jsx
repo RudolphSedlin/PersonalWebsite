@@ -28,51 +28,54 @@ function Blog() {
                         Blog
                     </h1>
                     I intend to post blogs and updates to this page, sorted reverse-chronologically from the top-down.
+                    <hr />
                     {BLOGS.map((blog) =>
-                        <div clas='left'>
-                            <br />
+                        <div class='left'>
+                            <details class='left'>
+                                <summary class='left'>
+                                    <h2 class='left'>
+                                        {blog.title}
+                                    </h2>
+                                </summary>
+                                <div class='left'>
+                                    <b class='larger'>
+                                        Date:
+                                        <tab />
+                                    </b>
+                                    {blog.date}
+                                </div>
+                                <br />
+                                <div class='left' dangerouslySetInnerHTML={{__html: blog.post}} />
+                                {blog.links && blog.links[0] ?
+                                    <div class='left'>
+                                        <br />
+                                        <h3 class='left'>
+                                            External Links:
+                                        </h3>
+                                        {blog.links.map((link) =>
+                                            <a class='left' href={link[1]} target="_blank">
+                                                <button>
+                                                    {link[0]}
+                                                </button>
+                                            </a>
+                                        )}
+                                    </div> :
+                                    <></>
+                                }
+                                {blog.images && blog.images[0] ?
+                                    <div class='left'>
+                                        <br />
+                                        <h3 class='left'>
+                                            Images:
+                                        </h3>
+                                        {blog.images.map((image) =>
+                                            <img src={image} class='images'/>
+                                        )}
+                                    </div> :
+                                    <></>
+                                }
                             <hr />
-                            <h2 class='left'>
-                                {blog.title}
-                            </h2>
-                            <br />
-                            <div class='left'>
-                                <b class='larger'>
-                                    Date:
-                                    <tab />
-                                </b>
-                                {blog.date}
-                            </div>
-                            <br />
-                            <div class='left' dangerouslySetInnerHTML={{__html: blog.post}} />
-                            {blog.links && blog.links[0] ?
-                                <div class='left'>
-                                    <br />
-                                    <h3 class='left'>
-                                        External Links:
-                                    </h3>
-                                    {blog.links.map((link) =>
-                                        <a class='left' href={link[1]} target="_blank">
-                                            <button>
-                                                {link[0]}
-                                            </button>
-                                        </a>
-                                    )}
-                                </div> :
-                                <></>
-                            }
-                            {blog.images && blog.images[0] ?
-                                <div class='left'>
-                                    <br />
-                                    <h3 class='left'>
-                                        Images:
-                                    </h3>
-                                    {blog.images.map((image) =>
-                                        <img src={image} class='images'/>
-                                    )}
-                                </div> :
-                                <></>
-                            }
+                            </details>
                         </div>
                     )}
                 </div>

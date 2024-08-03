@@ -37,25 +37,35 @@ function About() {
                     <br />
                     <br />
                     Listed below are my qualifications, sorted by various categories.
+                    <hr />
                     {QUALIFICATIONS.map((category) =>
                         <div class='left'>
-                        <br />
-                        <hr />
-                        <h2>
-                        {category[0]}
-                        </h2>
-                        <div class='left'>
-                        {category[1].map((qualification) =>
-                            <div class='left'>
-                            <br />
-                            <b class='larger'>
-                            {qualification[0] + ':'}
-                            <tab />
-                            </b>
-                            {qualification[1]}
-                            </div>
-                        )}
-                        </div>
+                            <details class='left'>
+                                <summary class='left'>
+                                    <h2 class='left'>
+                                        {category[0]}
+                                    </h2>
+                                </summary>
+                                <div class='left'>
+                                {category[1].map((qualification) =>
+                                    <div class='left'>
+                                        <details class='left'>
+                                            <summary class='left'>
+                                                <tab />
+                                                <tab />
+                                                <b class='larger'>
+                                                    {qualification[0]}
+                                                </b>
+                                            </summary>
+                                                <p class='indent'>
+                                                {qualification[1]}
+                                                </p>
+                                        </details>
+                                    </div>
+                                )}
+                                </div>
+                                <hr />
+                            </details>
                         </div>
                     )}
                 </div>

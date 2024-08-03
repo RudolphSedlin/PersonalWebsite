@@ -3,12 +3,36 @@ text-align: center;
 #Navigation {
 }
 
-button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+details > summary {display:block}
+
+summary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: #007BFF; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+summary:hover {
+  background-color: #0056b3;
+}
+
+summary:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+details[open] summary {
+  /* background-color: #0062cc; */
+}
+
+details[open] summary:hover {
+  background-color: #004085;
 }
 
 button {
@@ -81,6 +105,10 @@ p {
   justify-content: left;
   align-items: left;
   text-align: left;
+}
+
+p.indent {
+  margin-left: 80px;
 }
 
 .App {
