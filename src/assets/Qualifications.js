@@ -44,11 +44,22 @@ const QUALIFICATIONS = [
         [
             ['Apache', 'Apache is my HTTP server of choice and serves this website.'],
             ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
+            ['DNS', 'I have interacted extensively with the DNS, including configuration and even remote storage.'],
+        ]
+    ],
+
+    ['Protocols',
+        [
+            ['HTTP', 'I am very familiar with HTTP, having written many routers and backends in Express to accomodate the myriad of standard requests and codes.'],
+            ['HTTPS', 'Though HTTPS is just HTTP with TLS (formerly SSL and still called SSL often) on a different port, the difficulties of securing SSL certificates from certain vendors makes including it here worthwhile.'],
+            ['SMTP', 'I have previously communicated with servers over SMTP entirely manually, which is easy given that like HTTP everything is plaintext.'],
+            ['TLS', 'I can configure secure communications over TLS.'],
         ]
     ],
 
     ['Operating Systems',
         [
+            ['Android', 'I have used Android extensively and have a history of Android application development.'],
             ['BSD', 'I have used both FreeBSD and NetBSD for previous hosting projects, typically on AWS EC2 instances. My experience on Linux systems largely carries over here, though of course there are significant distinctions as well.'],
             ['GNU/Linux', 'Used GNU/Linux systems almost exclusively for my desktop and productivity needs since mid-2021 on a multitude of hardware and configurations, after switching away from Windows systems. In this time I have become very well versed with these systems through extensive troubleshooting and bootstrapping on my part, often for my own curiosity. Currently, I use a Fedora instance to host this website, and Arch for most of my desktop and productivity machines. I have organized the Stevens Linux Users Group to further encourage students to learn and utilize Linux systems more on campus. In total, I used the following popular distributions: Arch, Debian, Fedora, Ubuntu.'],
             ['Windows', 'I have used Windows systems for desktop and productivity use prior to switching to Linux systems, going back to Windows 98.'],
@@ -60,6 +71,7 @@ const QUALIFICATIONS = [
             ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration. I am familiar with the PR and merging process, as well as how to raise and resolve issues on services such as Github, Gitlab, and Gitea.'],
             ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
             ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
+            ['IDEs', 'Attached is a list of my favorite to use IDEs in order. <br /> <br /> <ol class="left"> <li class="left"> IntelliJ IDEA is my favorite IDE, with great debugging and building tools built in, as well as basic code generation and autocomplete. It really does live up to its slogan, Java development becomes pleasureful. Additionally, it features graphical interface editors so as to not have to deal with Swing (a fate worse than death). Additional community plugins are available to add on greater functionality, including one I worked on myself. </li> <br /> <li class="left"> Android Studio is really just IntelliJ IDEA with a QEMU Android Emulator bolted on, as well as built-in Kotlin support. Still, its greater specialization and strange defaults ranks it lower for me. </li> <br /> <li class="left"> I have little against PyCharm, mostly against Python. It too belongs to the family of IDEs descended or built on IntelliJ. </li> <br /> <li class="left"> Kate is my text-editor of choice for C and C++ development work. Its fast, simple, features a robust LSP and autocomplete, as well as ample tools for bulk-text manipulation and plugins. A terminal is also available. </li> </ol>'],
             ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
         ]
     ],
@@ -78,11 +90,10 @@ const QUALIFICATIONS = [
             ['Communication', 'I have developed an ability to communicate robust and complex technical topics succinctly to varied listeners.'],
             ['Filesystems', 'I have previously worked with EXT4, exFAT, FAT32, FUSE, NTFS, and ZFS systems.'],
             ['Leadership', 'To develop my leadership and collaboration skills, I officiated and directed the Stevens Linux Users Group. I also took a leading role in projects like Ducks in a Row and Anti-Copy-Paster-Python.'],
-            ['Networking Protocols and Technologies', 'I am familiar with and have worked with IP, TCP, UDP, DHCP, ARP, HTTP, FTP, SMTP, SSH, SCP, and TLS. I am also familiar with the DNS and Certificate Authorities.'],
-            ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, have developed a deep understanding on many subjects, and consider it an interdisciplinary strength og mine. This experience provides me with an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions.'],
+            ['Scientific Intuition', 'I have been adept in the empirical sciences for as long as I can remember, have developed a deep understanding on many subjects, and consider it an interdisciplinary strength of mine. This experience provides me with an intuition to judge solutions that are based off physical models or graphs, as well as statistics for those solutions. To this day I still delve deeply into planetary astronomy and astrophotography.'],
             ['Spoken Languages', 'I of course speak English natively, but am also adept in Russian, with more limited proficiency in German and Japanese.'],
             ['Systems Administration', 'Through coursework and my own investigation; I have developed a strong aptitude for benchmarking, scripting, networking (especially so), and troubleshooting of assorted UNIX and BSD systems.'],
-            ['Writing', 'Going along with my communciation skillset, I am also adept at writing succinct summaries of elaborate concepts, and always fared well in my writing coursework.'],
+            ['Writing', 'Going along with my communication skillset, I am also adept at writing succinct summaries of elaborate concepts, and always fared well in my writing coursework.'],
         ]
     ],
 ]

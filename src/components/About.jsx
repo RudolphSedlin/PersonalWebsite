@@ -40,26 +40,26 @@ function About() {
                     <hr />
                     {QUALIFICATIONS.map((category) =>
                         <div class='left'>
-                            <details class='left'>
+                            <details class='left' id='qualifications'>
                                 <summary class='left'>
-                                    <h2 class='left'>
-                                        {category[0]}
-                                    </h2>
+                                    <div class='summary-content'>
+                                        <h2 class='left'>
+                                            {category[0]}
+                                        </h2>
+                                    </div>
                                 </summary>
                                 <div class='left'>
                                 {category[1].map((qualification) =>
                                     <div class='left'>
                                         <details class='left'>
                                             <summary class='left'>
-                                                <tab />
-                                                <tab />
-                                                <b class='larger'>
-                                                    {qualification[0]}
-                                                </b>
+                                                <div class='summary-content'>
+                                                    <b class='larger'>
+                                                        {qualification[0]}
+                                                    </b>
+                                                </div>
                                             </summary>
-                                                <p class='indent'>
-                                                {qualification[1]}
-                                                </p>
+                                                <div class='left' dangerouslySetInnerHTML={{__html: qualification[1]}} />
                                         </details>
                                     </div>
                                 )}

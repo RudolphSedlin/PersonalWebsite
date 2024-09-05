@@ -3,23 +3,35 @@ text-align: center;
 #Navigation {
 }
 
-details > summary {display:block}
-
-summary {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  /* background-color: #007BFF; */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
+details > summary {display:inline-block}
 
 summary:hover {
   background-color: #0056b3;
+}
+
+#qualifications > *:not(summary) {
+  padding-left: 50px; /* Add padding to elements inside details, except the summary */
+}
+
+.summary-content {
+  position: relative;
+  display: inline-block; /* Make sure the underline adjusts to the text width */
+  cursor: pointer; /* Optional: makes it clear that summary is clickable */
+}
+
+.summary-content::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust underline thickness */
+  background-color: white; /* Adjust underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.summary-content:hover::after {
+  width: 100%;
 }
 
 summary:active {
@@ -33,6 +45,11 @@ details[open] summary {
 
 details[open] summary:hover {
   background-color: #004085;
+}
+
+summary h2, summary b {
+  display: inline; /* Change the h2 to behave as inline, so it doesn't take up the whole line */
+  margin: 0; /* Optional: remove extra margin if needed */
 }
 
 button {
@@ -71,14 +88,14 @@ br {
   margin: 5px;
 }
 
-.left {
+.left, .summary-content {
   justify-content: left;
   align-items: left;
   text-align: left;
   margin: 0 auto;
 }
 
-.larger {
+.larger, .larger2 {
   font-size: 1.2em;
   margin: 0px;
 }
@@ -107,15 +124,29 @@ p {
   text-align: left;
 }
 
+/*
 p.indent {
   margin-left: 80px;
 }
+*/
 
 .App {
   max-width: 1200px;
   width: 100%;
 }
 
+summary {
+  display: inline-block;
+  padding: 8px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: #007BFF; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
 
 
 

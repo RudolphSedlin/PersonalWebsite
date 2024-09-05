@@ -33,9 +33,11 @@ function Blog() {
                         <div class='left'>
                             <details class='left'>
                                 <summary class='left'>
-                                    <h2 class='left'>
-                                        {blog.title}
-                                    </h2>
+                                    <div class='summary-content'>
+                                        <h2 class='left'>
+                                            {blog.title}
+                                        </h2>
+                                    </div>
                                 </summary>
                                 <div class='left'>
                                     <b class='larger'>

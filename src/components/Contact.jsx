@@ -32,7 +32,7 @@ function Contact() {
                     <div>
                         <div class='flex-container'>
                             <span class='flex-item'>
-                                <b class='larger'>
+                                <b class='larger2'>
                                     Email:
                                     <tab />
                                 </b>
@@ -40,7 +40,7 @@ function Contact() {
                                 <tab />
                             </span>
                             <span class='flex-item'>
-                                <b class='larger'>
+                                <b class='larger2'>
                                     Phone:
                                     <tab />
                                 </b>

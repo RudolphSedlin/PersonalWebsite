@@ -33,9 +33,11 @@ function Projects() {
                         <div class='left'>
                             <details class='left'>
                                 <summary class='left'>
-                                    <h2 class='left'>
-                                        {project.title}
-                                    </h2>
+                                    <div class='summary-content'>
+                                        <h2 class='left'>
+                                            {project.title}
+                                        </h2>
+                                    </div>
                                 </summary>
                                 <br />
                                 <h3 class='left'>Description:</h3>
