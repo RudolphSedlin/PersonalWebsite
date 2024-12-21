@@ -52,6 +52,36 @@ summary h2, summary b {
   margin: 0; /* Optional: remove extra margin if needed */
 }
 
+/* Add animation to the details content */
+details[open] > *:not(summary) {
+  animation: slideDown 0.3s ease-in-out;
+  opacity: 1;
+}
+
+details > *:not(summary) {
+  max-height: 0; /* Start with zero height */
+  opacity: 0; /* Start fully transparent */
+  overflow: hidden; /* Hide content outside the bounds */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+details[open] > *:not(summary) {
+  max-height: 100%; /* Set to a large enough height for the content */
+  opacity: 1; /* Fully visible when open */
+}
+
+/* Add a sliding animation */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100vh; /* Match the value for opened content */
+    opacity: 1;
+  }
+}
+
 button {
   margin: 0px;
 }

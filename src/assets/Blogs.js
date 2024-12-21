@@ -1,5 +1,14 @@
 const BLOGS = [
     {
+        title: 'Graduated!',
+        post: "Done at last. Sadly, I lost some progress on this website as I forgot to produce a backup, so hopefully I recovered much of what was here. I guess I am not very good at blogging though, as there were significant gaps in this blog anyways. Still, I learned much over the recent few months, devoting my studies to scalable and reactive web systems with the likes of Spring for instance. I have also been studying the performance implications of the designs of various low-level systems, delving into a massive rabbit hole on interrupts and scheduling, as well as studying the effects of increasing bandiwdth on latency from queueing. In general, these last 4 months have been rather fun, new hardware too, which I always enjoy studying in great depth. In particular, we have seen Intel release both Arrow Lake and Battlemage, and while the former was plagued with memory access latency issues and poor caching, the latter appears very strong, and I hope to toy with one soon. Still, that's it for now.",
+        date: 'December 18th, 2024',
+        links: [],
+        images: [],
+    },
+
+
+    {
         title: 'Content Condensation and Revisiting Old Work',
         post: "This is a change that should've been made a while ago, but better late than never I suppose. All the content is now hidden by detail and summary elements. The page is no longer a giant text dump. Simply add some transition and hover CSS and make it look like more is going on than in reality. Otherwise progress is slow yet steady, I have been revisiting my old algorithms work as further preparation for entry-level interviews, and I forgot how fun it can be. I was definitely a much wiser person at age 19 when I did most of that work than I am now, incalculably wise dare I say, humble even. Beyond that, just more certifications, and some technical assessments.",
         date: 'August 3rd, 2024',

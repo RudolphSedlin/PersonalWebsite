@@ -18,18 +18,22 @@ const QUALIFICATIONS = [
 
     ['Professional Experience',
         [
-            ['Teaching Assistant (January 2022 - May 2024)', 'I have worked as a Teaching Assistant at Stevens Institute of Technology from January 2022 to May 2024. In that time, I have provided assistanceships for courses involving introductory Python, Data Structures, Computer Organization, and Systems Programming. My responsibilities have included development of automated homework grading tools, hosting office hours, hosting laboratory work and recitations, grading, and exam proctoring. In doing so, I developed a methodology for effective communication of a variety of computer science topics of varying difficulties and to varying listeners.'],
+            ['Course Assistant (January 2022 - May 2024)', 'I have worked as a Course Assistant at Stevens Institute of Technology from January 2022 to May 2024. In that time, I have provided assistanceships for courses involving introductory Python, Data Structures, Computer Organization, and Systems Programming. My responsibilities have included development of automated homework grading tools, hosting office hours, hosting laboratory work and recitations, grading, and exam proctoring. In doing so, I developed a methodology for effective communication of a variety of computer science topics of varying difficulties and to varying listeners.'],
         ]
     ],
 
     ['Web-Stack',
         [
+            ['Expo', 'Used Expo to prototype and iterate React Native apps.'],
             ['Express.js', 'Used Express extensively for routing and middleware in Ducks in a Row.'],
             ['GraphQL', 'Used GraphQL to enforce API request schema.'],
             ['Handlebars.js', 'Used extensively as a static site generator for Ducks in a Row, as its templating features were sufficient for it.'],
             ['Node.js', 'As is typical for a web-stack, I use Node as a server-side runtime environment for my web development, and NPM for my packaging needs.'],
             ['React.js', 'Used for this website and small miscellanious projects to produce thick-client static sites to avoid repeated network access.'],
+            ['React Native', 'I used React Native to craft platform-agnostic front-ends for mobile and web-apps, notably Vitatrack, which uses a React Native front end.'],
             ['Redis', 'Used Redis to accelerate repeated API access with cached results on the server-side.'],
+            ['Spring Boot', 'Used Spring Boot to serve web-apps with Java.'],
+            ['Vite', 'Used Vite to prototype and iterate React apps.'],
         ]
     ],
 
@@ -37,14 +41,18 @@ const QUALIFICATIONS = [
         [
             ['MongoDB', 'Used as a NoSQL database for Ducks in a Row, where a structured relational database would not be optimal.'],
             ['PostgreSQL', 'Used extensively in my DBMS work to establish relational databases. I am familiar with writing complex OLAP queries. Hosted my own databases on mutliple machines and connected to them remotely via language APIs such as JDBC and PSYCOPG. Wrote a Python script to enable easier aggregation on grouping attributes, a common pitfall of standard SQL query syntax, where multiple joins are required.'],
+            ['Room', 'I used Room for managing application databases in Android. In truth, it is an SQLite wrapper framework for Android, but nonetheless it is very useful and I appreciate knowing it.'],
+            ['SQLite', 'I have deployed local SQLite databases for various small applications.'],
         ]
     ],
 
     ['Infrastructure',
         [
-            ['Apache', 'Apache is my HTTP server of choice and serves this website.'],
+            ['Apache', 'Apache used to be my HTTP/S server of choice, and I still really appreciate the vast customizability of it. That said, it is over-customizeable for many of my web-hosting needs.'],
             ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
+            ['Certbot', 'I have used Certbot extensively to acquire and renew SSL certificates for various web-hosting projects.'],
             ['DNS', 'I have interacted extensively with the DNS, including configuration and even remote storage.'],
+            ['Nginx', 'Nginx is my current HTTP/S server of choice, as it is very performant and quick to deploy. It can also be used as a middleware between HTTP/S on ports 80/443 and servers that otherwise run locally. This is how it is done in the VitaTrack deployment actually, allowing me to use a more specialized server running locally.'],
         ]
     ],
 
@@ -69,6 +77,7 @@ const QUALIFICATIONS = [
     ['Software',
         [
             ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration. I am familiar with the PR and merging process, as well as how to raise and resolve issues on services such as Github, Gitlab, and Gitea.'],
+            ['Github Actions', 'I have uses Github Actions extensively for automated testing, integration, and deployment; and have grown very fond of CI/CD practices as a result.'],
             ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
             ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
             ['IDEs', 'Attached is a list of my favorite to use IDEs in order. <br /> <br /> <ol class="left"> <li class="left"> IntelliJ IDEA is my favorite IDE, with great debugging and building tools built in, as well as basic code generation and autocomplete. It really does live up to its slogan, Java development becomes pleasureful. Additionally, it features graphical interface editors so as to not have to deal with Swing (a fate worse than death). Additional community plugins are available to add on greater functionality, including one I worked on myself. </li> <br /> <li class="left"> Android Studio is really just IntelliJ IDEA with a QEMU Android Emulator bolted on, as well as built-in Kotlin support. Still, its greater specialization and strange defaults ranks it lower for me. </li> <br /> <li class="left"> I have little against PyCharm, mostly against Python. It too belongs to the family of IDEs descended or built on IntelliJ. </li> <br /> <li class="left"> Kate is my text-editor of choice for C and C++ development work. Its fast, simple, features a robust LSP and autocomplete, as well as ample tools for bulk-text manipulation and plugins. A terminal is also available. </li> </ol>'],
