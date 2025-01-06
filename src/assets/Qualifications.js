@@ -12,13 +12,20 @@ const QUALIFICATIONS = [
             ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for OOP language in academic coursework.'],
             ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
             ['R', 'I used R for assorted statistical analysis and graphing in undergraduate entry-level and intermediate statistics.'],
-            ['Shell', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
+            ['SH/BASH', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
         ]
     ],
 
     ['Professional Experience',
         [
             ['Course Assistant (January 2022 - May 2024)', 'I have worked as a Course Assistant at Stevens Institute of Technology from January 2022 to May 2024. In that time, I have provided assistanceships for courses involving introductory Python, Data Structures, Computer Organization, and Systems Programming. My responsibilities have included development of automated homework grading tools, hosting office hours, hosting laboratory work and recitations, grading, and exam proctoring. In doing so, I developed a methodology for effective communication of a variety of computer science topics of varying difficulties and to varying listeners.'],
+        ]
+    ],
+
+    ['Education',
+        [
+            ['Stevens Institute of Technology (September 2021 - December 2024)', 'I pursued my undergraduate university education at Stevens Institute of Technolugy due to its strong undergraduate Computer Science program. Faring well in my core classes and even my humanities, I elected to focus myself toward classes involving application backend and systems programming. Additionally, I focused myself on an assistanceship position to help others, as well as ran clubs such as the Stevens Linux User Group (which I also officiated). Eventually, I added a Mathematics minor to my education, with an emphasis on courses involving the mathetmatics of computation. In spite of this, I finished the program a semester early and with a strong 3.73 GPA. In no particular order, here is a list of all the courses I did very well on: <br /> <br /> <ul class="left"> <li class="left"> Data Structures </li> <br /> <li class="left"> Algorithms </li> <br /> <li class="left"> Systems Programming </li> <br /> <li class="left"> Operating Systems (a personal favorite of mine) </li> <br /> <li class="left"> Principles of Programming Languages </li> <br /> <li class="left"> Database Management Systems </li> <br /> <li class="left"> Web Programming </li> <br /> <li class="left"> Concurrent Programming  </li> <br /> <li class="left"> Systems Administration (another favorite) </li> <br /> <li class="left"> Mobile Systems and Applications </li> <br /> <li class="left"> Object-Oriented Analysis and Design </li> <br /> <li class="left"> Agile Methods for Software Development </li> <br /> <li class="left"> Numerical Methods </li> </ul>'],
+            ['Stuyvesant High School (September 2017 - June 2021)', 'Figured it was worthwhile to add my high school as a footer. I mostly devoted my time here toward the various science APs, as they captivated me the most. Like my undergraduate university education, I finished with a 3.8.'],
         ]
     ],
 
@@ -29,6 +36,7 @@ const QUALIFICATIONS = [
             ['GraphQL', 'Used GraphQL to enforce API request schema.'],
             ['Handlebars.js', 'Used extensively as a static site generator for Ducks in a Row, as its templating features were sufficient for it.'],
             ['Node.js', 'As is typical for a web-stack, I use Node as a server-side runtime environment for my web development, and NPM for my packaging needs.'],
+            ['Playwright', 'I have used Playwright for automated testing of various front-ends, some mine and some not.'],
             ['React.js', 'Used for this website and small miscellanious projects to produce thick-client static sites to avoid repeated network access.'],
             ['React Native', 'I used React Native to craft platform-agnostic front-ends for mobile and web-apps, notably Vitatrack, which uses a React Native front end.'],
             ['Redis', 'Used Redis to accelerate repeated API access with cached results on the server-side.'],
@@ -39,9 +47,12 @@ const QUALIFICATIONS = [
 
     ['Databases',
         [
+            ['Excel', 'Though an odd-one-out in comparison to the rest of these, sometimes a simple Excel table suffices for my needs, and I am familiar with it.'],
+            ['JPA Hibernate ORM', 'I used the JPA Hibernate ORM to interface with MySQL database servers for my Spring Framework applications.'],
             ['MongoDB', 'Used as a NoSQL database for Ducks in a Row, where a structured relational database would not be optimal.'],
+            ['MySQL', 'Used MySQL (MariaDB) as the database of choice for my Spring Boot studies. Though not without its idiosynchasies, I grew to like it.'],
             ['PostgreSQL', 'Used extensively in my DBMS work to establish relational databases. I am familiar with writing complex OLAP queries. Hosted my own databases on mutliple machines and connected to them remotely via language APIs such as JDBC and PSYCOPG. Wrote a Python script to enable easier aggregation on grouping attributes, a common pitfall of standard SQL query syntax, where multiple joins are required.'],
-            ['Room', 'I used Room for managing application databases in Android. In truth, it is an SQLite wrapper framework for Android, but nonetheless it is very useful and I appreciate knowing it.'],
+            ['Room ORM', 'I used Room ORM for managing application databases in Android, primarily to interface with local SQLite databases without needing to do my own query and cursor management.'],
             ['SQLite', 'I have deployed local SQLite databases for various small applications.'],
         ]
     ],
