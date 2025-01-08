@@ -3,14 +3,14 @@ const QUALIFICATIONS = [
         [
             ['AArch64', 'I have used AArch64 assembly extensively for Computer Organization coursework, and have also hosted laboratory work on the subject as a Course Assistant on the subject.'],
             ['C', 'I have used C extensively for Systems Programming and Linux kernel programming tasks, and have taught it as a Course Assistant at Stevens Institute of Technology for years, indiciative of my own understanding of the subject as well.'],
-            ['C++', 'I have used C++ for Algorithms coursework.'],
+            ['C++', 'I have used C++ for Algorithms coursework, and am currently devoting much study to improving this aspect of my programming abilities, as there is much to like'],
             ['Erlang', 'I used Erlang to learn how implement concurrent systems with messages for synchronization.'],
             ['Groovy', 'I experimented with Groovy to better learn scripting with apps running in the JVM.'],
             ['Java', 'My first programming language. Used extensively for Anti-Copy-Paster-Python, where the source-code is entirely in Java.'],
             ['Javascript', 'I used Javascript extensively for various web development projects like Ducks in a Row, as well as this website of course.'],
             ['MATLAB', 'I used MATLAB to program and graph assorted numerical methods, especially as they relate to interpolation and projection.'],
             ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for OOP language in academic coursework.'],
-            ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
+            ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. Notably, I have also used Python to develop Phi-Op, as Python is the perfect language for database interfacing, which is essential for such a project. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
             ['R', 'I used R for assorted statistical analysis and graphing in undergraduate entry-level and intermediate statistics.'],
             ['SH/BASH', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
         ]
@@ -57,7 +57,7 @@ const QUALIFICATIONS = [
         ]
     ],
 
-    ['Infrastructure',
+    ['Hosting',
         [
             ['Apache', 'Apache used to be my HTTP/S server of choice, and I still really appreciate the vast customizability of it. That said, it is over-customizeable for many of my web-hosting needs.'],
             ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
@@ -87,11 +87,13 @@ const QUALIFICATIONS = [
 
     ['Software',
         [
+            ['CMake', 'I have used CMake for producing build-scripts for applications on GNU/Linix and Windows systems. This way, I avoid needing more explicit build-system support.'],
             ['Git', 'I use remote and local git repositories for project VCS and backups, as well as for collaboration. I am familiar with the PR and merging process, as well as how to raise and resolve issues on services such as Github, Gitlab, and Gitea.'],
             ['Github Actions', 'I have uses Github Actions extensively for automated testing, integration, and deployment; and have grown very fond of CI/CD practices as a result.'],
             ['Gradle', 'Gradle was used as the build-system of choice for Anti-Copy-Paster-Python.'],
             ['G-Suite', 'I use G-Suite frequently for managing assorted documents and presentations. In particular, I heavily use Docs and Sheets.'],
             ['IDEs', 'Attached is a list of my favorite to use IDEs in order. <br /> <br /> <ol class="left"> <li class="left"> IntelliJ IDEA is my favorite IDE, with great debugging and building tools built in, as well as basic code generation and autocomplete. It really does live up to its slogan, Java development becomes pleasureful. Additionally, it features graphical interface editors so as to not have to deal with Swing (a fate worse than death). Additional community plugins are available to add on greater functionality, including one I worked on myself. </li> <br /> <li class="left"> Android Studio is really just IntelliJ IDEA with a QEMU Android Emulator bolted on, as well as built-in Kotlin support. Still, its greater specialization and strange defaults ranks it lower for me. </li> <br /> <li class="left"> I have little against PyCharm, mostly against Python. It too belongs to the family of IDEs descended or built on IntelliJ. </li> <br /> <li class="left"> Kate is my text-editor of choice for C and C++ development work. Its fast, simple, features a robust LSP and autocomplete, as well as ample tools for bulk-text manipulation and plugins. A terminal is also available. </li> </ol>'],
+            ['Make', 'In line with CMake, I have used Make in order to automate building of my various GNU/Linux applications. In fact, CMake simply produces Makefiles on Linux systems anyways.'],
             ['Microsoft Office Suite', 'In addition to G-Suite, I also used Microsft Office (especially Word and Excel) for assorted work. I obtained a certification for it some years prior.'],
         ]
     ],
