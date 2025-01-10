@@ -27,7 +27,7 @@ function About() {
                     <h1>
                         About
                     </h1>
-                    I am a Computer Science graduate from Stevens Institute of Technology, with a minor in Mathematics and a 3.73 GPA. I am interested in pursuing a career in SRE, SWE, and Data Science. Additionally, I am also passionate about computing hardware, infrastructure, semiconductor manufacturing, and astronomy. I am a diligent, patient, and collaborative problem solver and adaptable to most situations.
+                    I am a Computer Science graduate from Stevens Institute of Technology, with a minor in Mathematics and a 3.73 GPA. I am interested in pursuing a career in SRE, SWE, DevOps, and Data Science. Additionally, I am also passionate about computing hardware, benchmarking / overclocking, semiconductor manufacturing, hosting / devops, and astronomy. I am a diligent, patient, and collaborative problem solver and adaptable to most situations.
                     <br />
                     <br />
                     This website is currently a fairly spartan React thick-client being served by Nginx at the moment, with plans to migrate to a more advanced web-stack in the not too distant future (that said, this simple tech-stack does make things fast, in runtime performance and development). It is hosted on a Fedora AWS EC2 instance in US-East-1. My SSL certificate was acquired from Let's Encrypt.

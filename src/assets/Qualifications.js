@@ -100,9 +100,10 @@ const QUALIFICATIONS = [
 
     ['Hardware',
         [
-            ['CPUs', 'I have studied and extensively benchmarked and troubleshooted assorted Intel Core Processors such as the Core i9 13900K and AMD Ryzen 9 5950X in both Windows and Linux environments. I have extensively probed the voltage-frequency characteristics of many of these parts, as well as their electrical and thermal properties, in addition to just their performance.'],
+            ['Architecture', 'I have been self-studying computer architecture as it relates to concepts such as memory management, caching, topology, scalability, manufacturing, and clocking / overclocking since I was 13. I always considered it a fun study topic, and as the "most physical" of all the scientific topics. As a result, I have grown very adept at appraising the performance characteristics of various systems as well as predicting the performance and architecture of upcoming components and systems as well.'],
+            ['CPUs', 'I have self-studied and extensively benchmarked and troubleshooted assorted Intel Core Processors such as the Core i9 13900K and AMD Ryzen 9 5950X in both Windows and Linux environments. I have extensively probed the voltage-frequency characteristics of many of these parts, as well as their electrical and thermal properties, in addition to just their performance.'],
+            ['Desktop Electronics', 'I have been working with assorted computing hardware for around as long as I have studied computer architecture, and have built and extensively modified many hardware systems. I have grown adept at troubleshooting hardware problems ranging from issues in configuration to electrical and thermal problems as well.'],
             ['GPUs', 'Similarly to CPUs, I have done similar extensive investigation of assorted consumer GPUs such as the Intel Arc A770 LE and AMD Radeon RX 5700XT.'],
-            ['Desktop Electronics', 'I have been working with assorted computing hardware since I was 13, and have built and extensively modified many hardware systems. I have grown adept at troubleshooting hardware problems ranging from issues in configuration to electrical and thermal problems as well.'],
         ]
     ],
 
