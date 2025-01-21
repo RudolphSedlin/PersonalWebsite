@@ -2,7 +2,7 @@ const PROJECTS = [
     {
         title: 'VitaTrack',
         description:  'VitaTrack is a medical software for analyzing the contents of foodstuffs using LLMs and image recognition. Simply take a photograph, and have all the relevant food data anaylzed and added for your reflection. It also supports the ability to see cumulative food statistics, get alternative food suggestions, and provide general dietary goals.',
-        role: 'Operated as Backend Lead, Project Lead, and Scrum Master. Managed the overall project architecture. Developed and remotely deployed a secure and robust backend and CI/CD pipeline. Contributed to the front-end in places.',
+        role: 'Operated as Backend Lead, Project Lead, and Scrum Master. Managed the overall project architecture. Developed and remotely deployed a secure and robust backend and CI/CD pipeline; the latter of which activates on push to Github and sets up a fresh testing environment, runs assosciated tests, and automatically merges and deploys if successful. Contributed to the front-end in select-places.',
         time: '10/2024 - 12/2024',
         links: [
             ['Git', 'https://github.com/RudolphSedlin/VitaTrack'],

@@ -6,7 +6,7 @@ const QUALIFICATIONS = [
             ['C++', 'I have used C++ for Algorithms coursework, and am currently devoting much study to improving this aspect of my programming abilities, as there is much to like'],
             ['Erlang', 'I used Erlang to learn how implement concurrent systems with messages for synchronization.'],
             ['Groovy', 'I experimented with Groovy to better learn scripting with apps running in the JVM.'],
-            ['Java', 'My first programming language. Used extensively for Anti-Copy-Paster-Python, where the source-code is entirely in Java.'],
+            ['Java', 'My first programming language. Used extensively for Anti-Copy-Paster-Python, where the source-code is entirely in Java, as well as for Android development.'],
             ['Javascript', 'I used Javascript extensively for various web development projects like Ducks in a Row, as well as this website of course.'],
             ['MATLAB', 'I used MATLAB to program and graph assorted numerical methods, especially as they relate to interpolation and projection.'],
             ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for OOP language in academic coursework.'],
@@ -53,7 +53,7 @@ const QUALIFICATIONS = [
             ['MySQL', 'Used MySQL (MariaDB) as the database of choice for my Spring Boot studies. Though not without its idiosynchasies, I grew to like it.'],
             ['PostgreSQL', 'Used extensively in my DBMS work to establish relational databases. I am familiar with writing complex OLAP queries. Hosted my own databases on mutliple machines and connected to them remotely via language APIs such as JDBC and PSYCOPG. Wrote a Python script to enable easier aggregation on grouping attributes, a common pitfall of standard SQL query syntax, where multiple joins are required.'],
             ['Room ORM', 'I used Room ORM for managing application databases in Android, primarily to interface with local SQLite databases without needing to do my own query and cursor management.'],
-            ['SQLite', 'I have deployed local SQLite databases for various small applications.'],
+            ['SQLite', 'I have deployed used SQLite bindings in my applications to deploy smaller databases without spinning up server processes.'],
         ]
     ],
 
