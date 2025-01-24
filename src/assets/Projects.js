@@ -61,6 +61,15 @@ const PROJECTS = [
     },
 
     {
+        title: 'PLaF',
+        description:  'An interpreter written in OCAML that features a typechecker, typesystem, recursion, and classes with inheritance.',
+        role: 'Developed all components as a component of coursework.',
+        time: '01/2023 - 05/2023',
+        links: [],
+        images: [],
+    },
+
+    {
         title: 'Zen Alchemist 8086',
         description:  'A 16-bit microprocessor with 16 general-purpose registers capable of common arithmetic operations like multiplication and division, register move, load/store, conditional and unconditional branching, and HALT. It is also packaged with an assembler with support for labels, comments, and premade program data segments.',
         role: 'Developed in entirety. I drew inspiration from early 8086 designs, hoping to make an homage to early x86 processors with few registers and no ISA extensions.',

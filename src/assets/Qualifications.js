@@ -9,7 +9,7 @@ const QUALIFICATIONS = [
             ['Java', 'My first programming language. Used extensively for Anti-Copy-Paster-Python, where the source-code is entirely in Java, as well as for Android development.'],
             ['Javascript', 'I used Javascript extensively for various web development projects like Ducks in a Row, as well as this website of course.'],
             ['MATLAB', 'I used MATLAB to program and graph assorted numerical methods, especially as they relate to interpolation and projection.'],
-            ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for OOP language in academic coursework.'],
+            ['OCAML', 'My functional-language of choice, I used it extensively for implementing an interpreter for an OOP language in academic coursework.'],
             ['Python', 'I have used Python in assorted undergraduate Computer Science coursework. Notably, I have also used Python to develop Phi-Op, as Python is the perfect language for database interfacing, which is essential for such a project. I am hoping to use Python substantially more while studying machine learning, as many machine learning tools and frameworks are provided for Python (usually 2.7).'],
             ['R', 'I used R for assorted statistical analysis and graphing in undergraduate entry-level and intermediate statistics.'],
             ['SH/BASH', 'I used the Bourne Again Shell (with other shells like Fish infrequently) for most of my system scripting needs, including automating the grading of assorted homework assignments as a Course Assistant.'],
@@ -59,11 +59,11 @@ const QUALIFICATIONS = [
 
     ['Hosting',
         [
-            ['Apache', 'Apache used to be my HTTP/S server of choice, and I still really appreciate the vast customizability of it. That said, it is over-customizeable for many of my web-hosting needs.'],
             ['AWS EC2', 'I have used AWS EC2 instance for various hosting needs, including this website.'],
             ['Certbot', 'I have used Certbot extensively to acquire and renew SSL certificates for various web-hosting projects.'],
             ['DNS', 'I have interacted extensively with the DNS, including configuration and even remote storage.'],
             ['Nginx', 'Nginx is my current HTTP/S server of choice, as it is very performant and quick to deploy. It can also be used as a middleware between HTTP/S on ports 80/443 and servers that otherwise run locally. This is how it is done in the VitaTrack deployment actually, allowing me to use a more specialized server running locally.'],
+            ['Tomcat', 'Tomcat used to be my HTTP/S server of choice, and I still really appreciate the vast customizability of it. That said, it is over-customizeable for many of my web-hosting needs.'],
         ]
     ],
 
