@@ -2,6 +2,7 @@ const PROJECTS = [
     {
         title: 'UptimesElectric',
         description:  'A small project written in C++ that evaluated the uptimes of an electric vehicle charging network comprising of a number of stations and chargers that are up only at various times.',
+        role: 'Developed in entirety.',
         time: '01/2025',
         links: [],
         images: [],
