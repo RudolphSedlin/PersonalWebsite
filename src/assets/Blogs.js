@@ -1,5 +1,6 @@
 const BLOGS = [
 
+    /*
     {
         title: "RTX5080. A microarchitectural case study.",
         post: "<p>While RTX</p>",
@@ -9,6 +10,7 @@ const BLOGS = [
         ],
         images: ['/images/GB203.png', '/images/blackwellSM.png', '/images/AdaVSBlackwell.png'],
     },
+*/
 
     {
         title: 'On Recent Nvidia CES Announcements',
