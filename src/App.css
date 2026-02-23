@@ -1,109 +1,99 @@
-text-align: center;
-
-#Navigation {
-}
-
-details > summary {display:inline-block}
-
+/* ===== summary hover highlight: translucent white box ===== */
 summary:hover {
-  background-color: #0056b3;
+  background-color: rgba(255, 255, 255, 0.06); /* <-- translucent white */
 }
 
+/* Keep your indentation rule as-is */
 #qualifications > *:not(summary) {
-  padding-left: 50px; /* Add padding to elements inside details, except the summary */
+padding-left: 50px;
 }
 
+/* ===== gradient underline (hover-only) ===== */
 .summary-content {
   position: relative;
-  display: inline-block; /* Make sure the underline adjusts to the text width */
-  cursor: pointer; /* Optional: makes it clear that summary is clickable */
+  display: inline-block;
+  cursor: pointer;
 }
 
+/* underline exists but is hidden until hover */
 .summary-content::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px; /* Adjust underline thickness */
-  background-color: white; /* Adjust underline color */
-  transition: width 0.3s ease-in-out;
-}
-
-.summary-content:hover::after {
+  bottom: -2px;            /* slightly below text baseline */
   width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff2f6d, #ffd24a); /* <-- WCCFTech-ish */
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.26s ease, opacity 0.18s ease;
 }
 
+/* hover-only underline (NOT open-state) */
+summary:hover .summary-content::after,
+.summary-content:hover::after {
+  opacity: 0.95;
+  transform: scaleX(1);
+}
+
+/* active click feedback (keep your old feel, but match new highlight) */
 summary:active {
-  background-color: #004085;
+  background-color: rgba(255, 255, 255, 0.10);
   transform: scale(0.98);
 }
 
-details[open] summary {
-  /* background-color: #0062cc; */
-}
-
+/* keep your open behavior (no forced underline) */
+details[open] summary { }
 details[open] summary:hover {
-  background-color: #004085;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
+/* preserve inline headers */
 summary h2, summary b {
-  display: inline; /* Change the h2 to behave as inline, so it doesn't take up the whole line */
-  margin: 0; /* Optional: remove extra margin if needed */
+  display: inline;
+  margin: 0;
 }
 
-/* Add animation to the details content */
+/* ===== keep your existing open/close animation ===== */
 details[open] > *:not(summary) {
   animation: slideDown 0.3s ease-in-out;
   opacity: 1;
 }
 
 details > *:not(summary) {
-  max-height: 0; /* Start with zero height */
-  opacity: 0; /* Start fully transparent */
-  overflow: hidden; /* Hide content outside the bounds */
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 details[open] > *:not(summary) {
-  max-height: 100%; /* Set to a large enough height for the content */
-  opacity: 1; /* Fully visible when open */
+  max-height: 100%;
+  opacity: 1;
 }
 
-/* Add a sliding animation */
 @keyframes slideDown {
-  from {
-    max-height: 0;
-    opacity: 0;
-  }
-  to {
-    max-height: 100vh; /* Match the value for opened content */
-    opacity: 1;
-  }
+  from { max-height: 0; opacity: 0; }
+  to   { max-height: 100vh; opacity: 1; }
 }
 
-button {
-  margin: 0px;
-}
-
-.button_link {
-  margin: 5px;
-}
+button { margin: 0px; }
+.button_link { margin: 5px; }
 
 .flex-container {
   display: flex;
   flex-flow: row wrap;
 }
 
+/* preserve YOUR image scaling rules */
 img {
   max-height: 1000px;
   padding: 10px;
   max-width: 100%;
 }
 
-br {
-  margin: 0px;
-}
+br { margin: 0px; }
 
 .images {
   max-height: 500px;
@@ -140,13 +130,9 @@ tab {
   align-items: center;
   text-align: center;
   margin: 5px;
-  /* border: 3px solid green;
-  padding: 10px; */
 }
 
-list::marker {
-  vertical-align: top;
-}
+list::marker { vertical-align: top; }
 
 p {
   justify-content: left;
@@ -154,29 +140,218 @@ p {
   text-align: left;
 }
 
-/*
-p.indent {
-  margin-left: 80px;
-}
-*/
-
 .App {
   max-width: 1200px;
   width: 100%;
 }
 
+/* keep your summary box sizing + soften edges on black */
 summary {
   display: inline-block;
-  padding: 8px 0px;
+  padding: 8px 10px; /* slightly more “chip” like, but still close */
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  /* background-color: #007BFF; */
-  border: none;
-  border-radius: 5px;
+  /* border: 1px solid rgba(255,255,255,0.10); /* subtle outline */
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
 }
 
+summary:hover {
+  border-color: rgba(255,255,255,0.18);
+}
 
+/* ===========================
+ *  Navigation: “selected ticker”
+ *  Works with your current JSX:
+ *    <button disabled>Page</button>
+ *  =========================== */
 
+#Navigation {
+/* optional: keep centered and tighten spacing */
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+/* default nav buttons already styled by index.css button rules */
+/* active/selected: use disabled state as the “selected ticker” */
+#Navigation button:disabled {
+position: relative;
+opacity: 1;
+color: rgba(255,255,255,0.92);
+border: 1px solid rgba(255,255,255,0.22);
+background-color: rgba(255,255,255,0.06);
+}
+
+/* ===========================
+ *  IMAGES: rounded corners only
+ *  (no border, no card, no outline)
+ *  =========================== */
+img,
+.images {
+  border-radius: 20px;   /* tweak: 10–16px */
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* If any wrapper/card styles exist from earlier attempts, neutralize them */
+img {
+  display: inline-block;
+}
+
+/* ===========================
+ *  OPEN DETAILS: LEFT-SIDE GRAY GRADIENT
+ *  height-capped, non-intrusive
+ *  =========================== */
+
+details {
+  position: relative;
+}
+
+/* Vertical gradient rail on the left when open */
+details[open]::before {
+  content: "";
+  position: absolute;
+
+  left: -18px;        /* offset so it sits just outside content */
+  top: 8px;
+
+  width: 3px;
+  height: 140px;      /* <-- CAP HEIGHT (adjust 100–180px) */
+
+  border-radius: 999px;
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.30),
+                              rgba(255,255,255,0.12),
+                              rgba(255,255,255,0.00)
+  );
+
+  opacity: 0.85;
+}
+
+/* Ensure content renders above the gradient rail */
+details > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+ *  Pill navigation + link buttons
+ *  (scoped: won't wreck other buttons)
+ *  =========================== */
+
+/* Nav container */
+#Navigation {
+display: flex;
+justify-content: center;
+gap: 1px;
+
+/* FIX: allow wrapping on narrow screens */
+flex-wrap: wrap;
+
+/* optional: keeps wrapped rows looking nice */
+align-items: center;
+margin: 1px 0 1px 0; /* a little breathing room */
+}
+
+/* Base pill style */
+#Navigation button,
+.button_link {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.035);
+  color: rgba(255,255,255,0.88);
+
+  padding: 8px 14px;
+  border-radius: 999px; /* true pill */
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+
+  cursor: pointer;
+  transition:
+  transform 140ms ease,
+  background-color 160ms ease,
+  border-color 160ms ease,
+  box-shadow 160ms ease,
+  color 160ms ease;
+}
+
+/* Hover: subtle lift + brighter edge + soft glow */
+#Navigation button:hover,
+.button_link:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(255,255,255,0.22);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Press */
+#Navigation button:active,
+.button_link:active {
+  transform: translateY(0px) scale(0.985);
+  background: rgba(255,255,255,0.07);
+}
+
+/* Selected nav pill (your JSX uses disabled) */
+#Navigation button:disabled {
+cursor: default;
+opacity: 1;
+
+background: rgba(255,255,255,0.08);
+border-color: rgba(255,255,255,0.26);
+color: rgba(255,255,255,0.95);
+
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,0.10),
+0 10px 28px rgba(0,0,0,0.40);
+}
+
+/* Don't “hover lift” the selected pill */
+#Navigation button:disabled:hover {
+transform: none;
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,0.10),
+0 10px 28px rgba(0,0,0,0.40);
+}
+
+/* Optional: tiny sheen on hover (looks nice on black) */
+#Navigation button,
+.button_link {
+  position: relative;
+  overflow: hidden;
+}
+
+#Navigation button::before,
+.button_link::before {
+  content: "";
+  position: absolute;
+  left: -40%;
+  top: -80%;
+  width: 80%;
+  height: 220%;
+  background: radial-gradient(circle, rgba(255,255,255,0.10), transparent 60%);
+  transform: rotate(18deg);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+}
+
+#Navigation button:hover::before,
+.button_link:hover::before {
+  opacity: 1;
+}
+
+/* If your link buttons are inside <a>, keep anchors from re-coloring them */
+a .button_link {
+  color: inherit;
+}
