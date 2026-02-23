@@ -355,3 +355,84 @@ inset 0 1px 0 rgba(255,255,255,0.10),
 a .button_link {
   color: inherit;
 }
+
+.blog-lede {
+  font-size: 1.05em;
+  line-height: 1.65;
+  opacity: 0.98;
+}
+
+.blog-dropcap::first-letter {
+  float: left;
+  font-size: 3.2em;
+  line-height: 0.95;
+  padding: 0.05em 0.18em 0 0;
+  font-weight: 700;
+}
+
+.blog-aside {
+  margin: 14px 0;
+  padding: 12px 14px;
+  text-align: left;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+}
+
+.blog-aside p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+.blog-h3 {
+  text-align: left;
+  margin: 18px 0 8px;
+  font-size: 1.15em;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
+
+.blog-hr {
+  border: none;
+  height: 1px;
+  margin: 14px 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.0), rgba(255,255,255,0.18), rgba(255,255,255,0.0));
+}
+
+.button_link {
+  margin: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.button_link:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.18);
+  transform: translateY(-1px);
+}
+
+.button_link:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: left;
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-top: -4px;
+  padding-left: 10px; /* matches your image padding */
+}
