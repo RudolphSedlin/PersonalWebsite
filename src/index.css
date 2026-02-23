@@ -74,3 +74,52 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Stage */
+.page-wrap {
+  position: relative;
+  width: 100%;
+}
+
+/* Stack enter/exit on top of each other */
+.page-enter,
+.page-enter-active,
+.page-exit,
+.page-exit-active {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ENTER: start slightly smaller + transparent */
+.page-enter {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* ENTER ACTIVE: settle to normal */
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+
+/* EXIT: start normal */
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* EXIT ACTIVE: shrink slightly + fade out */
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+
+/* Optional: prevents flicker during transform on some GPUs */
+.page-enter-active,
+.page-exit-active {
+  will-change: opacity, transform;
+}
