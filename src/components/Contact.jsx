@@ -30,41 +30,42 @@ function Contact() {
                     <br />
                     <hr />
                     <div>
-                        <div class='flex-container'>
-                            <span class='flex-item'>
-                                <b class='larger2'>
-                                    Email:
-                                    <tab />
-                                </b>
-                                Rudolph.Sedlin@protonmail.com
-                                <tab />
-                            </span>
-                            <span class='flex-item'>
-                                <b class='larger2'>
-                                    Phone:
-                                    <tab />
-                                </b>
-                                646-565-7486
-                                <tab />
-                            </span>
-                            <span class='flex-item'>
-                                <a class='left' href='https://linkedin.com/in/rudolph-sedlin' target="_blank">
+                        <div className='flex-container'>
+                        <span className="flex-item flex-pill">
+                        <b className="larger2">
+                        Email:
+                        <tab />
+                        </b>
+                        Rudolph.Sedlin@protonmail.com
+                        <tab />
+                        </span>
+
+                        <span className="flex-item flex-pill">
+                        <b className="larger2">
+                        Phone:
+                        <tab />
+                        </b>
+                        646-565-7486
+                        <tab />
+                        </span>
+                            <span className='flex-item'>
+                                <a className='left' href='https://linkedin.com/in/rudolph-sedlin' target="_blank">
                                     <button>
                                         LinkedIn
                                     </button>
                                 </a>
                                 <tab />
                             </span>
-                            <span class='flex-item'>
-                                <a class='left' href='https://github.com/RudolphSedlin' target="_blank">
+                            <span className='flex-item'>
+                                <a className='left' href='https://github.com/RudolphSedlin' target="_blank">
                                     <button>
                                         Github
                                     </button>
                                 </a>
                                 <tab />
                             </span>
-                            <span class='flex-item'>
-                                <a class='left' href='https://www.hackerrank.com/profile/Rudolph_Sedlin' target="_blank">
+                            <span className='flex-item'>
+                                <a className='left' href='https://www.hackerrank.com/profile/Rudolph_Sedlin' target="_blank">
                                 <button>
                                     HackerRank
                                 </button>

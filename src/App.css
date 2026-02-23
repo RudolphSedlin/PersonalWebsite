@@ -81,9 +81,73 @@ details[open] > *:not(summary) {
 button { margin: 0px; }
 .button_link { margin: 5px; }
 
+/* ===========================
+ *  Contact row
+ * =========================== */
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* keep spans “plain” (no pill) */
+.flex-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  /* fight the global "*" margins a bit */
+  margin: 0 !important;
+}
+
+.flex-item * {
+  margin: 0 !important;
+}
+
+/* Make ONLY the link buttons look like the nav pills */
+.flex-item a button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.035);
+  color: rgba(255,255,255,0.88);
+
+  padding: 10px 16px;
+  border-radius: 999px; /* pill */
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+
+  cursor: pointer;
+
+  transition:
+  transform 140ms ease,
+  background-color 160ms ease,
+  border-color 160ms ease,
+  box-shadow 160ms ease,
+  color 160ms ease;
+}
+
+/* Hover: subtle lift + glow */
+.flex-item a button:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(255,255,255,0.22);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Press */
+.flex-item a button:active {
+  transform: translateY(0px) scale(0.985);
+  background: rgba(255,255,255,0.07);
 }
 
 /* preserve YOUR image scaling rules */
