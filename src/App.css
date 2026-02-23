@@ -1,61 +1,66 @@
-/* ===== summary hover highlight: translucent white box ===== */
+/* ===========================
+ *  SUMMARY + DETAILS INTERACTIONS
+ * =========================== */
+
+/* hover highlight: translucent white */
 summary:hover {
-  background-color: rgba(255, 255, 255, 0.06); /* <-- translucent white */
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
-/* Keep your indentation rule as-is */
+/* indentation inside #qualifications */
 #qualifications > *:not(summary) {
 padding-left: 50px;
 }
 
-/* ===== gradient underline (hover-only) ===== */
+/* gradient underline (hover-only) */
 .summary-content {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 0 auto;
 }
 
-/* underline exists but is hidden until hover */
 .summary-content::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px;            /* slightly below text baseline */
+  bottom: -2px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #ff2f6d, #ffd24a); /* <-- WCCFTech-ish */
+  background: linear-gradient(90deg, #ff2f6d, #ffd24a);
   opacity: 0;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.26s ease, opacity 0.18s ease;
 }
 
-/* hover-only underline (NOT open-state) */
 summary:hover .summary-content::after,
 .summary-content:hover::after {
   opacity: 0.95;
   transform: scaleX(1);
 }
 
-/* active click feedback (keep your old feel, but match new highlight) */
+/* active click feedback */
 summary:active {
   background-color: rgba(255, 255, 255, 0.10);
   transform: scale(0.98);
 }
 
-/* keep your open behavior (no forced underline) */
-details[open] summary { }
 details[open] summary:hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* preserve inline headers */
-summary h2, summary b {
+summary h2,
+summary b {
   display: inline;
   margin: 0;
 }
 
-/* ===== keep your existing open/close animation ===== */
+/* details open/close animation (keep as-is, even if snap close persists) */
 details[open] > *:not(summary) {
   animation: slideDown 0.3s ease-in-out;
   opacity: 1;
@@ -78,145 +83,41 @@ details[open] > *:not(summary) {
   to   { max-height: 100vh; opacity: 1; }
 }
 
-button { margin: 0px; }
-.button_link { margin: 5px; }
-
-/* ===========================
- *  Contact row
- * =========================== */
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+/* left-side gray gradient rail for open details */
+details {
+  position: relative;
 }
 
-/* keep spans “plain” (no pill) */
-.flex-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 0;
-  border: 0;
-  background: transparent;
-
-  /* fight the global "*" margins a bit */
-  margin: 0 !important;
+details[open]::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 8px;
+  width: 3px;
+  height: 140px; /* capped */
+  border-radius: 999px;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.30),
+                              rgba(255,255,255,0.12),
+                              rgba(255,255,255,0.00)
+  );
+  opacity: 0.85;
 }
 
-.flex-item * {
-  margin: 0 !important;
+details > * {
+  position: relative;
+  z-index: 1;
 }
 
-/* Make ONLY the link buttons look like the nav pills */
-.flex-item a button {
-  appearance: none;
-  -webkit-appearance: none;
-
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.035);
-  color: rgba(255,255,255,0.88);
-
-  padding: 10px 16px;
-  border-radius: 999px; /* pill */
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.1px;
-
-  cursor: pointer;
-
-  transition:
-  transform 140ms ease,
-  background-color 160ms ease,
-  border-color 160ms ease,
-  box-shadow 160ms ease,
-  color 160ms ease;
-}
-
-/* Hover: subtle lift + glow */
-.flex-item a button:hover {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.055);
-  border-color: rgba(255,255,255,0.22);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-}
-
-/* Press */
-.flex-item a button:active {
-  transform: translateY(0px) scale(0.985);
-  background: rgba(255,255,255,0.07);
-}
-
-/* preserve YOUR image scaling rules */
-img {
-  max-height: 1000px;
-  padding: 10px;
-  max-width: 100%;
-}
-
-br { margin: 0px; }
-
-.images {
-  max-height: 500px;
-  padding: 10px;
-  max-width: 100%;
-}
-
-.list {
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  margin: 5px;
-}
-
-.left, .summary-content {
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.larger, .larger2 {
-  font-size: 1.2em;
-  margin: 0px;
-}
-
-tab {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-* {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 5px;
-}
-
-list::marker { vertical-align: top; }
-
-p {
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-}
-
-.App {
-  max-width: 1200px;
-  width: 100%;
-}
-
-/* keep your summary box sizing + soften edges on black */
+/* summary "chip" sizing */
 summary {
   display: inline-block;
-  padding: 8px 10px; /* slightly more “chip” like, but still close */
+  padding: 8px 10px;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  /* border: 1px solid rgba(255,255,255,0.10); /* subtle outline */
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
@@ -226,106 +127,21 @@ summary:hover {
   border-color: rgba(255,255,255,0.18);
 }
 
-/* ===========================
- *  Navigation: “selected ticker”
- *  Works with your current JSX:
- *    <button disabled>Page</button>
- *  =========================== */
-
-#Navigation {
-/* optional: keep centered and tighten spacing */
-display: flex;
-justify-content: center;
-gap: 10px;
-}
-
-/* default nav buttons already styled by index.css button rules */
-/* active/selected: use disabled state as the “selected ticker” */
-#Navigation button:disabled {
-position: relative;
-opacity: 1;
-color: rgba(255,255,255,0.92);
-border: 1px solid rgba(255,255,255,0.22);
-background-color: rgba(255,255,255,0.06);
-}
 
 /* ===========================
- *  IMAGES: rounded corners only
- *  (no border, no card, no outline)
- *  =========================== */
-img,
-.images {
-  border-radius: 20px;   /* tweak: 10–16px */
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
+ *  NAVIGATION + BUTTON PILLS (NO WCCF WASH)
+ * =========================== */
 
-/* If any wrapper/card styles exist from earlier attempts, neutralize them */
-img {
-  display: inline-block;
-}
-
-/* ===========================
- *  OPEN DETAILS: LEFT-SIDE GRAY GRADIENT
- *  height-capped, non-intrusive
- *  =========================== */
-
-details {
-  position: relative;
-}
-
-/* Vertical gradient rail on the left when open */
-details[open]::before {
-  content: "";
-  position: absolute;
-
-  left: -18px;        /* offset so it sits just outside content */
-  top: 8px;
-
-  width: 3px;
-  height: 140px;      /* <-- CAP HEIGHT (adjust 100–180px) */
-
-  border-radius: 999px;
-  pointer-events: none;
-
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.30),
-                              rgba(255,255,255,0.12),
-                              rgba(255,255,255,0.00)
-  );
-
-  opacity: 0.85;
-}
-
-/* Ensure content renders above the gradient rail */
-details > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* ===========================
- *  Pill navigation + link buttons
- *  (scoped: won't wreck other buttons)
- *  =========================== */
-
-/* Nav container */
 #Navigation {
 display: flex;
 justify-content: center;
-gap: 1px;
-
-/* FIX: allow wrapping on narrow screens */
-flex-wrap: wrap;
-
-/* optional: keeps wrapped rows looking nice */
+flex-wrap: wrap;          /* mobile wrap */
+gap: 8px;
 align-items: center;
-margin: 1px 0 1px 0; /* a little breathing room */
+margin: 6px 0;
 }
 
-/* Base pill style */
+/* base pill style */
 #Navigation button,
 .button_link {
   appearance: none;
@@ -336,12 +152,13 @@ margin: 1px 0 1px 0; /* a little breathing room */
   color: rgba(255,255,255,0.88);
 
   padding: 8px 14px;
-  border-radius: 999px; /* true pill */
+  border-radius: 999px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.1px;
 
   cursor: pointer;
+
   transition:
   transform 140ms ease,
   background-color 160ms ease,
@@ -350,7 +167,7 @@ margin: 1px 0 1px 0; /* a little breathing room */
   color 160ms ease;
 }
 
-/* Hover: subtle lift + brighter edge + soft glow */
+/* hover: lift + subtle glow (neutral) */
 #Navigation button:hover,
 .button_link:hover {
   transform: translateY(-1px);
@@ -359,14 +176,14 @@ margin: 1px 0 1px 0; /* a little breathing room */
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
-/* Press */
+/* press */
 #Navigation button:active,
 .button_link:active {
   transform: translateY(0px) scale(0.985);
   background: rgba(255,255,255,0.07);
 }
 
-/* Selected nav pill (your JSX uses disabled) */
+/* selected nav pill (your JSX uses disabled) */
 #Navigation button:disabled {
 cursor: default;
 opacity: 1;
@@ -380,7 +197,6 @@ inset 0 1px 0 rgba(255,255,255,0.10),
 0 10px 28px rgba(0,0,0,0.40);
 }
 
-/* Don't “hover lift” the selected pill */
 #Navigation button:disabled:hover {
 transform: none;
 box-shadow:
@@ -388,7 +204,7 @@ inset 0 1px 0 rgba(255,255,255,0.10),
 0 10px 28px rgba(0,0,0,0.40);
 }
 
-/* Optional: tiny sheen on hover (looks nice on black) */
+/* sheen (still neutral) */
 #Navigation button,
 .button_link {
   position: relative;
@@ -415,23 +231,109 @@ inset 0 1px 0 rgba(255,255,255,0.10),
   opacity: 1;
 }
 
-/* If your link buttons are inside <a>, keep anchors from re-coloring them */
+/* keep anchors from recoloring */
 a .button_link {
   color: inherit;
 }
+
+
+/* ===========================
+ *  CONTACT PAGE (spans plain, only link buttons pilled)
+ * =========================== */
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  margin: 0 !important;
+}
+
+.flex-item * {
+  margin: 0 !important;
+}
+
+/* only the anchor buttons become pills */
+.flex-item a button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.035);
+  color: rgba(255,255,255,0.88);
+
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+
+  cursor: pointer;
+
+  transition:
+  transform 140ms ease,
+  background-color 160ms ease,
+  border-color 160ms ease,
+  box-shadow 160ms ease,
+  color 160ms ease;
+}
+
+.flex-item a button:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(255,255,255,0.22);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.flex-item a button:active {
+  transform: translateY(0px) scale(0.985);
+  background: rgba(255,255,255,0.07);
+}
+
+
+/* ===========================
+ *  IMAGES (single definition)
+ * =========================== */
+
+img,
+.images {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+img {
+  max-height: 1000px;
+  display: inline-block;
+}
+
+.images {
+  max-height: 500px;
+}
+
+
+/* ===========================
+ *  BLOG HELPERS (NO DROPCAPS)
+ * =========================== */
 
 .blog-lede {
   font-size: 1.05em;
   line-height: 1.65;
   opacity: 0.98;
-}
-
-.blog-dropcap::first-letter {
-  float: left;
-  font-size: 3.2em;
-  line-height: 0.95;
-  padding: 0.05em 0.18em 0 0;
-  font-weight: 700;
 }
 
 .blog-aside {
@@ -459,26 +361,12 @@ a .button_link {
   border: none;
   height: 1px;
   margin: 14px 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.0), rgba(255,255,255,0.18), rgba(255,255,255,0.0));
-}
-
-.button_link {
-  margin: 6px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.10);
-  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.button_link:hover {
-  background: rgba(255,255,255,0.10);
-  border-color: rgba(255,255,255,0.18);
-  transform: translateY(-1px);
-}
-
-.button_link:active {
-  transform: translateY(0px) scale(0.98);
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.0),
+                              rgba(255,255,255,0.18),
+                              rgba(255,255,255,0.0)
+  );
 }
 
 .img-row {
@@ -489,14 +377,65 @@ a .button_link {
   text-align: left;
 }
 
-figure {
-  margin: 0;
-}
+figure { margin: 0; }
 
 figcaption {
   text-align: left;
   font-size: 0.9em;
   opacity: 0.7;
   margin-top: -4px;
-  padding-left: 10px; /* matches your image padding */
+  padding-left: 10px;
+}
+
+
+/* ===========================
+ *  YOUR EXISTING GLOBALS (kept)
+ * =========================== */
+
+button { margin: 0px; }
+br { margin: 0px; }
+
+* {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+
+p {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+.list {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 5px;
+}
+
+.left {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.larger,
+.larger2 {
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+tab {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+list::marker { vertical-align: top; }
+
+.App {
+  max-width: 1200px;
+  width: 100%;
 }
