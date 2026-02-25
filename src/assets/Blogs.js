@@ -55,7 +55,7 @@ images: ['/images/GB203.png', '/images/blackwellSM.png', '/images/AdaVSBlackwell
     post:
     "<div class='blog-post'>" +
     "<h3 class='blog-section'>Update</h3>" +
-    "<p>Happy 2025! I finally decided to automate deployment of this site! Plus, it inflates my commit history that way by making many small changes, and agreen bars on Github are always indicative of a strong developer! With my education behind me, I have much more time to work on the projects that I like, and have been studying Spring Framework and C++ again. I have decided to dedicate parts of this blog to hardware, as I said I would. I attached some publications that I really enjoy browsing; notably Chips and Cheese, Techpowerup, and former Anandtech. The latter of these no longer publishes new articles, but their past collection is impeccable. I would also strongly urge watching the Youtubers 'TechTechPotato' and 'Level1Techs.</p>" +
+    "<p>Happy 2025! I finally decided to automate deployment of this site! Plus, it inflates my commit history that way by making many small changes, and agreen bars on Github are always indicative of a strong developer! With my education behind me, I have much more time to work on the projects that I like, and have been studying Spring Framework and C++ again. I have decided to dedicate parts of this blog to hardware, as I said I would. I attached some publications that I really enjoy browsing; notably Chips and Cheese, Techpowerup, and former Anandtech. The latter of these no longer publishes new articles, but their past collection is impeccable. I would also strongly urge watching the Youtubers 'TechTechPotato' and 'Level1Techs'.</p>" +
     "</div>",
     date: 'January 10th, 2025',
     links: [
