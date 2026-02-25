@@ -439,3 +439,7 @@ list::marker { vertical-align: top; }
   max-width: 1200px;
   width: 100%;
 }
+
+.left .button_link {
+  margin: /* <<< TUNE THIS >>> */ 6px;
+}
