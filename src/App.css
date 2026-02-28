@@ -20,7 +20,7 @@ padding-left: 50px;
   justify-content: left;
   align-items: left;
   text-align: left;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .summary-content::after {
@@ -400,6 +400,7 @@ br { margin: 0px; }
   align-items: center;
   text-align: center;
   margin: 5px;
+  box-sizing: border-box;
 }
 
 p {
@@ -419,7 +420,11 @@ p {
   justify-content: left;
   align-items: left;
   text-align: left;
-  margin: 0 auto;
+
+  /* <<< CHANGE THESE >>> */
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .larger,
@@ -438,6 +443,11 @@ list::marker { vertical-align: top; }
 .App {
   max-width: 1200px;
   width: 100%;
+
+  /* <<< ADD THESE >>> */
+  margin: 0 auto;
+  padding: 0 0px; /* <<< TUNE THIS >>> */
+  box-sizing: border-box;
 }
 
 .left .button_link {
