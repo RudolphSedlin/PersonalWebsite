@@ -64,8 +64,8 @@ button:focus-visible {
  *  If you *never* want light mode, delete this media query. */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
   }
   a:hover {
     color: #747bff;
