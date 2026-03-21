@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Navigation from './Navigation.jsx'
 
 import '../App.css'
@@ -6,70 +6,71 @@ import '../App.css'
 import QUALIFICATIONS from '../assets/Qualifications.js'
 
 function About() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         async function getAPIData() {
-            setLoading(false);
-        };
+            setLoading(false)
+        }
 
-        getAPIData();
-    }, []);
+        getAPIData()
+    }, [])
 
-    if (loading)
+    if (loading) {
         return <div>Loading...</div>
-        else
-            return (
-                <div>
-                    <Navigation
-                        currentPage='About'
-                    />
-                    <h1>
-                        About
-                    </h1>
-                    I am a Computer Science graduate from Stevens Institute of Technology, with a minor in Mathematics and a 3.73 GPA. I am interested in pursuing a career in SRE, SWE, DevOps, and Data Science. Additionally, I am also passionate about computing hardware, benchmarking / overclocking, semiconductor manufacturing, hosting / devops, and astronomy. I am a diligent, patient, and collaborative problem solver and adaptable to most situations.
-                    <br />
-                    <br />
-                    This website is currently a fairly spartan React thick-client being served by Nginx at the moment, with plans to migrate to a more advanced web-stack in the not too distant future (that said, this simple tech-stack does make things fast, in runtime performance and development). It is hosted on a Fedora AWS EC2 instance in US-East-1. My SSL certificate was acquired from Let's Encrypt.
-                    <br />
-                    <br />
-                    To learn more, please check the other tabs on this webpage. If you have questions or requests regarding my work, please email me.
-                    <br />
-                    <br />
-                    Listed below are my qualifications, sorted by various categories.
-                    <hr />
-                    {QUALIFICATIONS.map((category) =>
-                        <div class='left'>
-                            <details class='left' id='qualifications'>
-                                <summary class='left'>
-                                    <div class='summary-content'>
-                                        <h2 class='left'>
-                                            {category[0]}
-                                        </h2>
-                                    </div>
-                                </summary>
-                                <div class='left'>
-                                {category[1].map((qualification) =>
-                                    <div class='left'>
-                                        <details class='left'>
-                                            <summary class='left'>
-                                                <div class='summary-content'>
-                                                    <b class='larger'>
-                                                        {qualification[0]}
-                                                    </b>
-                                                </div>
-                                            </summary>
-                                            <div class='left' dangerouslySetInnerHTML={{__html: qualification[1]}} />
-                                        </details>
-                                    </div>
-                                )}
-                                </div>
-                                <hr />
-                            </details>
-                        </div>
-                    )}
+    } else {
+        return (
+            <div>
+            <Navigation
+            currentPage='About'
+        />
+        <h1>
+        About
+        </h1>
+        I am a Technology Analyst at Fiserv and a Computer Science graduate of Stevens Institute of Technology with a minor in Mathematics. My work focuses on data-intensive application development, particularly in telemetry, backend systems, and enterprise software. Beyond software development, I maintain a strong interest in computing hardware, benchmarking and overclocking, semiconductor manufacturing, and astronomy. I approach technical work with patience, diligence, adaptability, and a collaborative mindset.
+        <br />
+        <br />
+        To learn more, please explore the other sections of this website. For questions about my work or for professional inquiries, please feel free to email me.
+        <br />
+        <br />
+        Below is a categorized overview of my qualifications and technical background.
+        <hr />
+        {QUALIFICATIONS.map((category) =>
+            <div className='left' key={category[0]}>
+            <details className='left' id='qualifications'>
+            <summary className='left'>
+            <div className='summary-content'>
+            <h2 className='left'>
+            {category[0]}
+            </h2>
+            </div>
+            </summary>
+            <div className='left'>
+            {category[1].map((qualification) =>
+                <div className='left' key={qualification[0]}>
+                <details className='left'>
+                <summary className='left'>
+                <div className='summary-content'>
+                <b className='larger'>
+                {qualification[0]}
+                </b>
                 </div>
-            )
-};
+                </summary>
+                <div
+                className='left'
+            dangerouslySetInnerHTML={{ __html: qualification[1] }}
+            />
+            </details>
+            </div>
+            )}
+            </div>
+            <hr />
+            </details>
+            </div>
+        )}
+        </div>
+        )
+    }
+}
 
 export default About;
