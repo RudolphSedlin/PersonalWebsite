@@ -40,7 +40,7 @@ images: ['/images/GB203.png', '/images/blackwellSM.png', '/images/AdaVSBlackwell
 
         "<p>The underlying idea is straightforward: by allowing air to pass through the card rather than around it, heat is expelled more efficiently, improving thermals, reducing noise, and enabling higher power envelopes without requiring liquid cooling. This has also helped counteract the growing size of modern GPUs, which has become a practical constraint for system compatibility.</p>" +
 
-        "<p>With Ada, Nvidia experimented with a parallel PCB layout (notably in the unreleased Titan Ada concept), but Blackwell’s expanded memory interface—from 12 to 16 channels—forced a return to a more compact, centralized design. The result resembles an MXM-style module positioned between two airflow paths.</p>" +
+        "<p>With Ada, Nvidia experimented with a parallel PCB layout (notably in the unreleased Titan Ada concept), but Blackwell’s expanded memory interface from 12 to 16 channels forced a return to a more compact, centralized design. The result resembles an MXM-style module positioned between two airflow paths.</p>" +
 
         "<p>The density of the PCB is striking: nearly the entire surface is populated with components, leaving virtually no unused space. In this context, the 16-pin connector becomes more understandable, even if its broader adoption remains questionable. That said, at this price point, it is difficult not to consider whether an HBM3E configuration would have been more efficient, offering higher bandwidth, reduced power consumption, and better spatial utilization.</p>" +
 
@@ -93,7 +93,7 @@ images: ['/images/GB203.png', '/images/blackwellSM.png', '/images/AdaVSBlackwell
     "<div class='blog-post'>" +
     "<h3 class='blog-section'>Milestone</h3>" +
     "<p>Done at last. I lost some progress on this site due to a missing backup, though most of it has been recovered. Despite irregular posting, the past few months have been productive. I focused heavily on scalable and reactive systems, particularly within the Spring ecosystem.</p>" +
-    "<p>I also spent time exploring low-level performance topics, including interrupts, scheduling, and the relationship between bandwidth and latency under queuing effects. On the hardware side, recent releases such as Intel’s Arrow Lake and Battlemage have been interesting to analyze—particularly the tradeoffs in memory latency and cache behavior.</p>" +
+    "<p>I also spent time exploring low-level performance topics, including interrupts, scheduling, and the relationship between bandwidth and latency under queuing effects. On the hardware side, recent releases such as Intel’s Arrow Lake and Battlemage have been interesting to analyze particularly the tradeoffs in memory latency and cache behavior.</p>" +
     "</div>",
     date: 'December 18th, 2024',
     links: [],
