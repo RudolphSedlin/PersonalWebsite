@@ -83,7 +83,7 @@ const PROJECTS = [
     description: 'A custom 16-bit processor and assembler featuring a structured instruction set with support for arithmetic, control flow, and memory operations.',
     role: 'Designed and implemented both the processor architecture and an accompanying assembler with flexible syntax, label resolution, and support for structured program definition. The ISA was inspired by early x86 systems while simplifying and extending key aspects such as register availability and instruction encoding for clarity and usability.',
     time: '11/2022 - 12/2022',
-    stack: 'C, Assembly, Computer Architecture',
+    stack: 'Java, Assembly, Computer Architecture, Microprocessor Design',
     links: [],
     images: ['/images/ZenAlchemist8086.png'],
 },
