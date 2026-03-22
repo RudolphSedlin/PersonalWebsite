@@ -1,31 +1,26 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import React from 'react'
 
 import '../App.css'
 
 function Navigation(props) {
-    let currentPage;
-    let pagesList;
-
-    currentPage = props.currentPage;
-    pagesList = ['About', 'Projects', 'Blog', 'Contact'];
+    const currentPage = props.currentPage
+    const pagesList = ['About', 'Projects', 'Blog', 'Contact']
 
     return (
-        <div id='Navigation' class='Navigation'>
-            {
-                pagesList.map((page) =>
-                    page === currentPage ?
-                    <Link to={'/' + page}>
-                        <button disabled>{page}</button>
-                    </Link> :
-                    <Link to={'/' + page}>
-                        <button >{page}</button>
-                    </Link>
-            )}
-            <br />
-            <br />
+        <div id='Navigation' className='Navigation'>
+        {pagesList.map((page) => (
+            <Link to={'/' + page} key={page}>
+            <button disabled={page === currentPage}>
+            {page}
+            </button>
+            </Link>
+        ))}
+
+        <br />
+        <br />
         </div>
-    );
-};
+    )
+}
 
 export default Navigation;

@@ -77,6 +77,7 @@ const QUALIFICATIONS = [
 [
     ['HTTP', 'Deep familiarity with HTTP through backend and API development.'],
 ['HTTPS', 'Configured and maintained secure HTTPS deployments.'],
+['SASL', 'Used SASL extensively for more thorough authentication in the enterpirse space.'],
 ['SMTP', 'Worked directly with SMTP at the protocol level for debugging and integration.'],
 ['TLS', 'Configured and troubleshot TLS-secured communication.'],
 ]
@@ -134,7 +135,7 @@ const QUALIFICATIONS = [
 ['Filesystems', 'Worked with EXT4, exFAT, FAT32, FUSE, NTFS, and ZFS.'],
 ['Leadership', 'Led technical initiatives and contributed to team direction across projects and organizations.'],
 ['Scientific Intuition', 'Apply interdisciplinary intuition from physics and mathematics to system behavior and performance.'],
-['Spoken Languages', 'Native English; fluent Russian; working German and Japanese.'],
+['Spoken Languages', 'Native English; fluent Russian; elementary German and Japanese.'],
 ['Systems Administration', 'Strong background in UNIX system administration, networking, and performance analysis.'],
 ['Writing', 'Produce concise, structured technical communication.'],
 ]

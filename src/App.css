@@ -453,3 +453,32 @@ list::marker { vertical-align: top; }
 .left .button_link {
   margin: /* <<< TUNE THIS >>> */ 6px;
 }
+
+.stack {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 0.15rem;
+}
+
+.blog-post {
+  line-height: 1.55;
+}
+
+.blog-section {
+  margin-bottom: 0.35rem;
+}
